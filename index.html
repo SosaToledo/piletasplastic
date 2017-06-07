@@ -15,7 +15,6 @@
 	#portada{
 		background-image: url(img/fondo.jpg);
 		background-size: cover;
-		height: 960px;
 		width: 100%;
 	}
 	#empresa{
@@ -41,13 +40,18 @@
 		display: inline;
 		padding-right: 25px;
 	}
-
-
-
 </style>
+<script type="text/javascript">
+   function tamano(){
+      document.getElementById('portada').style.display='block'
+      document.getElementById('portada').style.height=window.innerHeight.toString()+"px";
+      document.getElementById('empresa').style.height=window.innerHeight.toString()+"px";
 
-<body>
-	<nav class="navbar-fixed-top">
+      document.getElementById('piletas').style.height=window.innerHeight.toString()+"px";
+   }
+</script>
+<body onload="tamano();" onresize="tamano();">
+	<nav class="navbar-fixed-bottom">
 		<ul>
 			<li><a href="#portada">Inicio</a></li>
 			<li><a href="#empresa">Empresa</a></li>
@@ -55,9 +59,9 @@
 			<li><a href="#">Contactos</a></li>
 		</ul>
 	</nav>
-	<div id="portada">
+	<div id="portada" onresize="tamano();">
 	</div>
-	<div id="empresa" style="max-height: auto; min-height: auto;">
+	<div id="empresa" style="max-height: auto; min-height: auto;" onresize="tamano();">
 		<div id="nuestraempresa" class="col-md-6" >
 			<p>
 				El  Chaoxun-1 (CX-1) es un misil de crucero supersónico antibuque desarrollado por una subsidiaria de China Aerospace Science and Technology Corporation (CASC), la más importante empresa del sector aeroespacial chino. 
