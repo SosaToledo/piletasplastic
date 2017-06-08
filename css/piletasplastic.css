@@ -1,0 +1,51 @@
+body{
+	margin: 0px;
+	background-color: #EEEEEE;
+}
+h1, h4{
+	text-align: center;
+	font-family: sans-serif;
+}
+.contenedorVertical > img{
+	height: 150px;
+	width: 200px;
+}
+.portada{
+	background-color: grey;
+	background-image: url("../img/fondo.jpeg");
+	width: 100%;
+	height: 650px;
+	background-size: cover;
+}
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.contenedorVertical{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding: 20px;
+}
+.nuestraEmpresa{
+	margin: auto;
+	width: 45%;
+}
+.imagenEmpresa{
+	margin: auto;
+	width: 45%;
+}
+.item-flex{
+	display: flex;
+	margin: 5px;
+}
+.card{
+	box-shadow: 2px 2px 3.5px black;
+	padding: 8px;
+	background-color: white;
+}
