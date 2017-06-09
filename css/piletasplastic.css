@@ -9,16 +9,14 @@ body{
 }
 p{
 	text-align: center;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	width: 75%;
 }
-/*.contenedorVertical > img{
-	height: 150px;
-	width: 200px;
-}*/
+
 #logo{
 	position: absolute;
-	right: 0;
+	right: 10px;
+	top: 10px;
 	height: 20%;
 	width: 20%;
 }
@@ -27,6 +25,7 @@ p{
 	width: 100%;
 	height: 650px;
 	background-size: cover;
+	box-shadow: 2px 2px 5px;
 }
 .contenedor{
 	display: flex;
@@ -47,7 +46,9 @@ p{
 .nuestraEmpresa{
 	margin: auto;
 	text-align: justify;
-	padding: 25px;
+	padding: 70px 15px 70px 10px;
+	background-color: white;
+	box-shadow: 2px 2px 5px ;
 }
 .imagenEmpresa{
 	margin: auto;
