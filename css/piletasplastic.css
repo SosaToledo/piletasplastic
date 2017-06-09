@@ -1,17 +1,22 @@
+@font-face {
+    font-family: plastic;
+    font-weight: bold;
+    src: url("../fuentes/plastic.otf") format("opentype");
+}
 body{
 	margin: 0px;
 	background-color: #EEEEEE;
 }
-h1, h4{
+p{
 	text-align: center;
-	font-family: sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	width: 75%;
 }
-.contenedorVertical > img{
+/*.contenedorVertical > img{
 	height: 150px;
 	width: 200px;
-}
+}*/
 .portada{
-	background-color: grey;
 	background-image: url("../img/fondo.jpeg");
 	width: 100%;
 	height: 650px;
@@ -20,32 +25,53 @@ h1, h4{
 .contenedor{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 20px;
+	flex-wrap: nowrap;
+	padding: 10px;
+	justify-content: space-around;
+	align-items: stretch;
 }
 .contenedorVertical{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;	
 	flex-wrap: nowrap;
 	padding: 20px;
 }
 .nuestraEmpresa{
 	margin: auto;
-	width: 45%;
+	text-align: justify;
+	padding: 25px;
 }
 .imagenEmpresa{
 	margin: auto;
-	width: 45%;
 }
 .item-flex{
+	width: 75%;
+	max-width: 150%;
+	height: auto;
 	display: flex;
+	flex: 0 1 auto;
 	margin: 5px;
 }
 .card{
 	box-shadow: 2px 2px 3.5px black;
 	padding: 8px;
 	background-color: white;
+}
+.contenedorPortada{
+	position: relative;
+}
+.imgPortada{
+	width: 100%;
+	height: auto;
+}
+.textoPortada{
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+  	font-family: plastic;
+  	color: black;
+    text-shadow: 3px 3px 5px #FFFFFF;
+	font-size: 45px;
 }
