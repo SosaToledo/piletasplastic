@@ -3,11 +3,6 @@
 		display: none;
 	}
 }
-@font-face {
-    font-family: plastic;
-    font-weight: bold;
-    src: url("../fuentes/plastic.otf") format("opentype");
-}
 body{
 	margin: 0px;
 	background-color: #EEEEEE;
@@ -16,15 +11,16 @@ p{
 	text-align: center;
   	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	width: 75%;
+	opacity: 1;
 }
 .portada{
 	background-image: url("../img/f2.jpg");
 	width: 100%;
 	height: 650px;
 	background-size: cover;
-	box-shadow: 2px 2px 5px;
 }
 .contenedor{
+	margin: 0 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -36,9 +32,10 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-content: center;
 	align-items: center;	
 	flex-wrap: nowrap;
-	padding: 20px;
+	/*padding: 10px;*/
 }
 .nuestraEmpresa{
 	margin: auto;
@@ -49,6 +46,36 @@ p{
 }
 .imagenEmpresa{
 	margin: auto;
+}
+.infoQuincho{
+	/*margin-top: 10px;*/
+	margin:auto;
+	color:black;
+	/*opacity: 1;*/
+	/*text-shadow: 1px 1px 5px #273746;*/
+	font-size: 1.4em;
+	text-align: justify;
+	/*z-index: 3;*/
+}
+#imagenQuincho{
+	padding-top: 10px;
+	background-image: url("../img/quin/f2.png");
+	/*opacity: 0.6;*/
+	background-size: cover;
+	margin: auto;
+	/*background-color: red;*/
+	height: 400px;
+	width: 100%;
+	/*z-index: 1;*/
+}
+.verticalItem{
+	flex: 1 1 auto;
+	width: 90%;
+	min-width: 80%;
+	max-width: 95%;
+	height: auto;
+	margin: 5px 0;
+	align-self: center;
 }
 .item-flex{
 	width: 75%;
@@ -90,7 +117,7 @@ a{
 	padding: 10px;
 	text-decoration: none;
 	color: white;
-	text-shadow: 1px 1px 1px grey;
+	text-shadow: 2px 2px 1px black;
 }
 a:hover{
 	color: white;
