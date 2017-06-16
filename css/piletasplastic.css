@@ -10,6 +10,16 @@
 	.contenedorEmpresa iframe{
 		width: 100%;
 	}
+	.contenedor .contenedorVertical{
+		width: 50%;
+	}
+	.contenedorPiscinas .columnaPiscinas{
+		width: 50%;
+	}
+	.contenedorQuincho p{
+		font-size-adjust: auto;
+		font-size: 1px;
+	}
 }
 /*Agrego una fuente de google*/
 @font-face {
@@ -22,9 +32,7 @@ body{
 }
 p{
 	text-align: center;
-  	font-family:Roboto-Regular, sans-serif;
-	width: 75%;
-	opacity: 1;
+  font-family:Roboto-Regular, sans-serif;
 }
 .portada{
 	background-image: url("../img/f2.jpg");
@@ -69,6 +77,27 @@ p{
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
 }
+.contenedorPiscinas{
+	margin:10px 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.columnaPiscinas{
+	box-sizing: border-box;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
 .topeColumna{
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
@@ -78,13 +107,11 @@ p{
 .contenedorQuincho{
 	padding-top: 10px;
 	background-image: url("../img/quin/f2.png");
-	/*opacity: 0.6;*/
 	background-size: cover;
+	background-position: center;
 	margin: auto;
-	/*background-color: red;*/
 	height: 400px;
 	width: 100%;
-	/*z-index: 1;*/
 }
 .contenedorQuincho h1{
 	text-align: center;
@@ -97,12 +124,13 @@ p{
 }
 .contenedorQuincho p {
 	margin:auto;
-	color:rgb(0, 0, 0);
+	width: 90%;
+	color:black;
 	font-size: 1.5em;
-	font-family:Roboto-Regular, verdana;
+	font-family:Roboto-Regular;
 	text-align: left;
 	font-weight: bold;
-	text-shadow: 1.5px 1.5px 1px #ccc;
+	text-shadow: 1.5px 1.5px 5px rgb(242, 242, 242);
 }
 .labelGaleria{
 	width: 100%;
