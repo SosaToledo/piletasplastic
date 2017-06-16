@@ -3,13 +3,18 @@
 		display: none;
 	}
 }
+/*Agrego una fuente de google*/
+@font-face {
+    font-family:Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 body{
 	margin: 0px;
 	background-color: #EEEEEE;
 }
 p{
 	text-align: center;
-  	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  	font-family:Roboto-Regular, sans-serif;
 	width: 75%;
 	opacity: 1;
 }
@@ -33,31 +38,25 @@ p{
 	flex-direction: column;
 	justify-content: space-around;
 	align-content: center;
-	align-items: center;	
+	align-items: center;
 	flex-wrap: nowrap;
 	/*padding: 10px;*/
 }
 .nuestraEmpresa{
-	margin: auto;
+	margin:auto;
 	text-align: justify;
 	padding: 70px 15px 70px 10px;
 	background-color: white;
-	box-shadow: 2px 2px 5px ;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
 }
-.imagenEmpresa{
-	margin: auto;
+.topeColumna{
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	font-size: 1.5em;
+	background-color: white;
 }
-.infoQuincho{
-	/*margin-top: 10px;*/
-	margin:auto;
-	color:black;
-	/*opacity: 1;*/
-	/*text-shadow: 1px 1px 5px #273746;*/
-	font-size: 1.4em;
-	text-align: justify;
-	/*z-index: 3;*/
-}
-#imagenQuincho{
+.contenedorQuincho{
 	padding-top: 10px;
 	background-image: url("../img/quin/f2.png");
 	/*opacity: 0.6;*/
@@ -67,6 +66,98 @@ p{
 	height: 400px;
 	width: 100%;
 	/*z-index: 1;*/
+}
+.contenedorQuincho h1{
+	text-align: center;
+	margin: 0;
+	color: black;
+	font-size: 3em;
+	font-family:    Roboto-Regular,verdana;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px #ccc;
+}
+.contenedorQuincho p {
+	margin:auto;
+	color:rgb(0, 0, 0);
+	font-size: 1.5em;
+	font-family:Roboto-Regular, verdana;
+	text-align: left;
+	font-weight: bold;
+	text-shadow: 1.5px 1.5px 1px #ccc;
+}
+.labelGaleria{
+	width: 100%;
+	background-color:white;
+	font-family:Roboto-Regular;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+	margin: 10px 0;
+	padding: 10px;
+	border-top: 2px solid #939393;
+	border-bottom: 2px solid #939393;
+}
+.contenedorSlider{
+	max-width:1500px;
+	width: 100%;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.slide{
+	width: 100%;
+	display: none;
+	max-height: 800px;
+	border-radius: 5px;
+}
+.controlSlider{
+	text-align: center!important;
+	padding:0.01em 16px;
+	margin-top:16px!important;
+  margin-bottom:16px!important;
+	font-size:18px!important;
+	color:#fff!important;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+	width: 100%;
+}
+.sliderFlechaIzquierda,.sliderFlechaDerecha,.sliderBoton{
+	cursor: pointer;
+}
+.sliderFlechaIzquierda{
+	float: left!important;
+	font-size: 1.5em;
+	margin-left: 20px;
+	text-shadow: 2px 2px 0px black;
+}
+.sliderFlechaDerecha{
+	float: right!important;
+	margin-right: 20px;
+	font-size: 1.5em;
+	text-shadow: 2px 2px 0px black;
+}
+.sliderBoton{
+	background-color:#000;
+  color:#fff;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+	border-radius:50%;
+	box-shadow: 2px 2px 0px black;
+	height:1.5em;
+	width:1.5em;
+	padding:0;
+	border:1px solid #ccc!important;
+	background-color:transparent!important;
+}
+.w3-white{
+	color:#000!important;
+  background-color:#fff!important;
 }
 .verticalItem{
 	flex: 1 1 auto;
@@ -86,9 +177,13 @@ p{
 	margin: 5px;
 }
 .card{
-	box-shadow: 2px 2px 3.5px black;
-	padding: 8px;
 	background-color: white;
+	padding:10px;
+	border:2px solid #ccc;
+	border-radius:5px
+}
+.card:hover{
+	border:2px solid #939393;
 }
 #barra{
 	height: auto;
@@ -98,6 +193,10 @@ p{
 	text-align: left;
 	position: fixed;
 	bottom: 0;
+	z-index: 3;
+}
+nav ul li a {
+	font-family:    Roboto-Regular,verdana;
 }
 ul{
 	float: left;
@@ -125,4 +224,20 @@ a:hover{
 }
 footer{
 	background-color: #273746;
+}
+footer div div div{
+	 display: flex;
+	 align-items: center;
+}
+footer div div div p{
+	display: inline-flex;
+	color: #EEEEEE;
+	font-size: 1.4em;
+	margin: 5px;
+	text-shadow: 2px 2px 1px black;
+}
+footer div div div a{
+	color: #EEEEEE;
+	font-size: 1.4em;
+	font-family:    Roboto-Regular,sans-serif;
 }
