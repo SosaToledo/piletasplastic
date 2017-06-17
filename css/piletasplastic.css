@@ -16,6 +16,19 @@
 	.contenedorPiscinas .columnaPiscinas{
 		width: 50%;
 	}
+<<<<<<< HEAD
+=======
+	.contenedorQuincho p{
+		font-size-adjust: auto;
+		font-size: 1px;
+	}
+	.contenedorFooter .contenedorContacto{
+		width: 100%;
+	}
+	.contenedorFooter iframe{
+		width: 100%;
+	}
+>>>>>>> master
 }
 
 /*Agrego una fuente de google*/
@@ -56,6 +69,77 @@ p{
 	flex-wrap: nowrap;
 	/*padding: 10px;*/
 }
+/**/
+/*Clases de Accesorios*/
+/**/
+.contenedorAccesorios{
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+.accesorio{
+	width: 100%;
+	background-position: center;
+	height: 40em;
+	display: none;
+}
+.controlSlider2{
+	text-align: center!important;
+	padding:0.01em 16px;
+	margin-top:16px!important;
+  margin-bottom:16px!important;
+	font-size:18px!important;
+	color:#fff!important;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+	width: 100%;
+}
+.sliderFlechaIzquierda2,.sliderFlechaDerecha2,.sliderBoton2{
+	cursor: pointer;
+}
+.sliderFlechaIzquierda2{
+	float: left!important;
+	font-size: 1.5em;
+	margin-left: 20px;
+	text-shadow: 2px 2px 0px black;
+}
+.sliderFlechaDerecha2{
+	float: right!important;
+	margin-right: 20px;
+	font-size: 1.5em;
+	text-shadow: 2px 2px 0px black;
+}
+.sliderBoton2{
+	background-color:#000;
+  color:#fff;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+	border-radius:50%;
+	box-shadow: 2px 2px 0px black;
+	height:1.5em;
+	width:1.5em;
+	padding:0;
+	border:1px solid #ccc!important;
+	background-color:transparent!important;
+}
+.white{
+	color:#000!important;
+  background-color:#fff!important;
+}
+
+/**/
+/*CLases de nuestra empresa*/
+/**/
 .contenedorEmpresa{
 	display: flex;
 	flex-direction: row;
@@ -73,6 +157,9 @@ p{
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
 }
+/**/
+/*Clases de las piscinas*/
+/**/
 .contenedorPiscinas{
 	margin:10px 0;
 	padding: 0;
@@ -95,12 +182,26 @@ p{
 	flex-wrap: nowrap;
 }
 .topeColumna{
+	padding: 0 100px;
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
 	font-size: 1.5em;
 	background-color: #EEEEEE;
 }
+<<<<<<< HEAD
 #seccionQuinchos{
+=======
+/**/
+/*CLASES DEL QUINCHO*/
+/**/
+.contenedorQuincho{
+	padding-top: 10px;
+	background-image: url("../img/quin/f2.png");
+	background-size: cover;
+	background-position: center;
+	margin: auto;
+	height: 400px;
+>>>>>>> master
 	width: 100%;
 	height: 600px;
 	background-color: #EEEEEE;
@@ -114,6 +215,7 @@ p{
 	height: 260px;
 	align-items: center;
 }
+<<<<<<< HEAD
 
 .labelGaleria{
 	width: 100%;
@@ -132,14 +234,22 @@ p{
 	width: 100%;
 	max-height: 60%;
 	/*margin:auto;*/
+=======
+/*************************/
+/*COMIENZA SLIDER GALERIA*/
+/*************************/
+.contenedorSlider{
+	width: 100%;
+	margin: auto;
+>>>>>>> master
 	margin-top: 10px;
 	margin-bottom: 10px;
+	box-sizing: border-box;
 	position: relative;
 }
 .slide{
 	width: 100%;
 	display: none;
-	max-height: auto;
 	border-radius: 5px;
 }
 .controlSlider{
@@ -190,14 +300,38 @@ p{
 	color:#000!important;
   background-color:#fff!important;
 }
+/*CLASES DEL FOOTER*/
+.contenedorFooter{
+	padding-bottom: 4%;
+	margin: 0 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: space-between;
+}
+.contenedorContacto{
+	width: 50%;
+	margin: 0 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.columnaContacto{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
 .verticalItem{
 	flex: 1 1 auto;
-	width: 90%;
-	min-width: 80%;
-	max-width: 95%;
-	height: auto;
 	margin: 5px 0;
-	align-self: center;
 }
 .item-flex{
 	width: 75%;
@@ -256,23 +390,33 @@ a:hover{
 }
 footer{
 	background-color: #273746;
+	box-sizing: border-box;
 }
-footer div div div{
-	 display: flex;
-	 align-items: center;
+footer .contenedorContacto{
+	box-sizing: border-box;
 }
-footer div div div p{
-	display: inline-flex;
+.datoContacto{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	justify-content:center;
+}
+footer .contenedorContacto .datoContacto p{
 	color: #EEEEEE;
-	font-size: 1.4em;
-	margin: 5px;
+	font-size: 1.6em;
+	padding: 10px;
+	display: inline-block;
+	margin: auto;
 	text-shadow: 2px 2px 1px black;
 }
-footer div div div a{
+footer .contenedorContacto .datoContacto a{
 	color: #EEEEEE;
-	font-size: 1.4em;
+	font-size: 1.6em;
+	text-align: center;
+	display: inline-block;
 	font-family:    Roboto-Regular,sans-serif;
 }
+<<<<<<< HEAD
 /*color de la barra*/
 #inicioMenu{
 	color: rgba(255,0,0,1);
@@ -297,3 +441,10 @@ footer div div div a{
 	color: rgba(128,255,128,1);
 }
 /*-----------------*/
+=======
+footer iframe{
+	width: 50%;
+	box-sizing: border-box;
+
+}
+>>>>>>> master
