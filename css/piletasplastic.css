@@ -16,19 +16,12 @@
 	.contenedorPiscinas .columnaPiscinas{
 		width: 50%;
 	}
-<<<<<<< HEAD
-=======
-	.contenedorQuincho p{
-		font-size-adjust: auto;
-		font-size: 1px;
-	}
 	.contenedorFooter .contenedorContacto{
 		width: 100%;
 	}
 	.contenedorFooter iframe{
 		width: 100%;
 	}
->>>>>>> master
 }
 
 /*Agrego una fuente de google*/
@@ -41,8 +34,54 @@ body{
 }
 p{
 	text-align: center;
-  font-family:Roboto-Regular, sans-serif;
+  	font-family:Roboto-Regular, sans-serif;
 }
+
+/*barra*/
+#barra{
+	background: rgba(247,52,52,1);
+	background: -moz-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,52,52,1)), color-stop(13%, rgba(242,242,61,1)), color-stop(32%, rgba(90,245,12,1)), color-stop(51%, rgba(24,240,153,1)), color-stop(70%, rgba(39,109,230,1)), color-stop(87%, rgba(182,39,230,1)), color-stop(99%, rgba(230,39,64,1)), color-stop(100%, rgba(230,39,64,1)));
+	background: -webkit-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
+	background: -o-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
+	background: -ms-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
+	background: linear-gradient(to right, rgba(247,52,52,0.6) 0%, rgba(242,242,61,0.6) 13%, rgba(90,245,12,0.6) 32%, rgba(24,240,153,0.6) 51%, rgba(39,109,230,0.6) 70%, rgba(182,39,230,0.6) 87%, rgba(230,39,64,0.6) 99%, rgba(230,39,64,0.6) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73434', endColorstr='#e62740', GradientType=1 );
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+}
+nav ul li a {
+	font-family:    Roboto-Regular,verdana;
+}
+ul{
+	padding-left: 0;
+	margin: 0px;
+	float: left;
+	list-style-type: none;
+	display: inline;
+	position: relative;
+	left: 50%;
+}
+li{
+	float: left;
+	font-size: 180%;
+	position: relative;
+	right: 50%;
+
+}
+a{
+	padding: 0 10px;
+	text-decoration: none;
+	color: white;
+	text-shadow: 2px 2px 1px black;
+}
+
+/*portada*/
 .portada{
 	background-image: url("../img/f2.jpg");
 	background-position: center;
@@ -51,27 +90,27 @@ p{
 	height: 650px;
 	background-size: cover;
 }
-.contenedor{
-	width: 100%;
+
+/*empresa*/
+.contenedorEmpresa{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	padding: 10px;
-	justify-content: space-around;
-	align-items: stretch;
-}
-.contenedorVertical{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-content: center;
 	align-items: center;
-	flex-wrap: nowrap;
-	/*padding: 10px;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-/**/
-/*Clases de Accesorios*/
-/**/
+.nuestraEmpresa{
+	margin:auto 10px;
+	width: 45%;
+	display: inline-block;
+	text-align: justify;
+	padding: 20px 15px 20px 10px;
+	background-color: #EEEEEE;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+/*Accesorios*/
 .contenedorAccesorios{
 	width: 100%;
 	box-sizing: border-box;
@@ -137,29 +176,7 @@ p{
   background-color:#fff!important;
 }
 
-/**/
-/*CLases de nuestra empresa*/
-/**/
-.contenedorEmpresa{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.nuestraEmpresa{
-	margin:auto 0;
-	width: 55%;
-	display: inline-block;
-	text-align: justify;
-	padding: 70px 15px 70px 10px;
-	background-color: #EEEEEE;
-	border-top: 2px solid #ccc;
-	border-bottom: 2px solid #ccc;
-}
-/**/
-/*Clases de las piscinas*/
-/**/
+/*piscinas*/
 .contenedorPiscinas{
 	margin:10px 0;
 	padding: 0;
@@ -188,35 +205,8 @@ p{
 	font-size: 1.5em;
 	background-color: #EEEEEE;
 }
-<<<<<<< HEAD
-#seccionQuinchos{
-=======
-/**/
-/*CLASES DEL QUINCHO*/
-/**/
-.contenedorQuincho{
-	padding-top: 10px;
-	background-image: url("../img/quin/f2.png");
-	background-size: cover;
-	background-position: center;
-	margin: auto;
-	height: 400px;
->>>>>>> master
-	width: 100%;
-	height: 600px;
-	background-color: #EEEEEE;
-	font-family:    Roboto-Regular,verdana;	
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-#elementoQuinchos{
-	width: 270px;
-	height: 260px;
-	align-items: center;
-}
-<<<<<<< HEAD
 
+/*Galeria*/
 .labelGaleria{
 	width: 100%;
 	background-color:#EEEEEE;
@@ -233,15 +223,8 @@ p{
 	max-width:1500px;
 	width: 100%;
 	max-height: 60%;
-	/*margin:auto;*/
-=======
-/*************************/
-/*COMIENZA SLIDER GALERIA*/
-/*************************/
-.contenedorSlider{
 	width: 100%;
 	margin: auto;
->>>>>>> master
 	margin-top: 10px;
 	margin-bottom: 10px;
 	box-sizing: border-box;
@@ -341,6 +324,29 @@ p{
 	flex: 0 1 auto;
 	margin: 5px;
 }
+
+
+
+
+.contenedor{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding: 10px;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.contenedorVertical{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	/*padding: 10px;*/
+}
+
 .card{
 	background-color: white;
 	padding:10px;
@@ -349,44 +355,6 @@ p{
 }
 .card:hover{
 	border:2px solid #939393;
-}
-#barra{
-	height: auto;
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	text-align: left;
-	position: fixed;
-	bottom: 0;
-	z-index: 2;
-}
-nav ul li a {
-	font-family:    Roboto-Regular,verdana;
-}
-ul{
-	float: left;
-	list-style-type: none;
-	padding: 0;
-	display: inline;
-	position: relative;
-	left: 50%;
-}
-li{
-	float: left;
-	font-size: 180%;
-	position: relative;
-	right: 50%;
-
-}
-a{
-	padding: 0 10px;
-	text-decoration: none;
-	color: white;
-	text-shadow: 2px 2px 1px black;
-}
-a:hover{
-	color: white;
-	text-decoration: none;
 }
 footer{
 	background-color: #273746;
@@ -416,35 +384,8 @@ footer .contenedorContacto .datoContacto a{
 	display: inline-block;
 	font-family:    Roboto-Regular,sans-serif;
 }
-<<<<<<< HEAD
-/*color de la barra*/
-#inicioMenu{
-	color: rgba(255,0,0,1);
-}
-#empresaMenu{
-	background-color: rgba(0,255,0,1);
-}
-#accesoriosMenu{
-	background-color: rgba(0,0,255,1);
-}
-#piletasMenu{
-	color: rgba(255,0,255,1);
-	box-shadow: 1px 1px 10px 3px white;
-}
-#quinchoMenu{
-	background-color: rgba(255,255,0,1);
-}
-#galeriaMenu{
-	background-color: rgba(0,255,255,1);
-}
-#contactoMenu{
-	color: rgba(128,255,128,1);
-}
-/*-----------------*/
-=======
 footer iframe{
 	width: 50%;
 	box-sizing: border-box;
 
 }
->>>>>>> master

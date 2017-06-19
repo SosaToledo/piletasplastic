@@ -6,77 +6,36 @@
 <link rel="stylesheet" type="text/css" href="css/piletasplastic.css"></link>
 <script type="text/javascript" src="js/scripts.js"></script>
 <body>
-<<<<<<< HEAD
-	<!-- Este script es del slider -->
-	<script type="text/javascript">
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function sumarDivs(n) {
-		showDivs(slideIndex += n);
-		}
-
-		function actualDiv(n) {
-		showDivs(slideIndex = n);
-		}
-
-		function showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("slide");
-		var dots = document.getElementsByClassName("demo");
-		if (n > x.length) {slideIndex = 1}
-		if (n < 1) {slideIndex = x.length}
-		for (i = 0; i < x.length; i++) {
-			 x[i].style.display = "none";
-		}
-		for (i = 0; i < dots.length; i++) {
-			 dots[i].className = dots[i].className.replace(" w3-white", "");
-		}
-		x[slideIndex-1].style.display = "block";
-		dots[slideIndex-1].className += " w3-white";
-		}
-	</script>
-	<!-- fin del script del slider -->
 	<!-- bara de navegacion -->
-=======
->>>>>>> master
 	<nav id="barra">
-    <ul>
-      <li id="inicioMenu"><a href="#portada" style="color: rgba(255,0,0,1);">INICIO</a></li>
-      <li id="empresaMenu"><a href="#contenedorEMP">EMPRESA</a></li>
-      <li id="accesoriosMenu"><a href="#accesorios">ACCESORIOS</a></li>
-      <li id="piletasMenu"><a href="#contenedorPIS" style="color: rgba(255,0,255,1); text-shadow: 1px 1px 10px 3px white;">PILETAS</a></li>
-      <li id="quinchoMenu"><a href="#seccionQuinchos">QUINCHOS</a></li>
-      <li id="galeriaMenu"><a href="#galeria">GALERIA</a></li>
-      <li id="contactoMenu"><a href="#contactos" style="color: rgba(128,255,128,1);">CONTACTOS</a></li>
-    </ul>
-  	</nav>
+	    <ul>
+	      <li><a href="#portada">INICIO</a></li>
+	      <li><a href="#empresa">EMPRESA</a></li>
+	      <li><a href="#accesorios">ACCESORIOS</a></li>
+	      <li><a href="#piletas">PILETAS</a></li>
+	      <li><a href="#quinchos">QUINCHOS</a></li>
+	      <li><a href="#galeria">GALERIA</a></li>
+	      <li><a href="#contactos">CONTACTOS</a></li>
+	    </ul>
+  </nav>
 
-  	<!-- seccion portada -->
-	<div id="portada" class="portada" style="padding: 0;">	
+	<!-- seccion portada -->
+	<div id="portada" class="portada">
 	</div>
-<<<<<<< HEAD
 
 	<!-- seccion empresa -->
-	<div id="contenedorEMP" class="contenedor">
-=======
-	<div class="contenedorEmpresa">
->>>>>>> master
+	<div id="empresa" class="contenedorEmpresa">
 		<p class="nuestraEmpresa">
 			La calidad y los recursos humanos constituyen nuestras bases más importantes para competir y adecuarnos al mercado actual y futuro. Entendiendo por calidad "la aptitud para satisfacer las necesidades y expectativas de nuestros clientes".
 			En lo que respecta a piscinas, tampoco hemos olvidado la función estética e incluso artística que ésta puede tener en el jardín o conjunto arquitectónico donde se ubique, construyendo nuestras piscinas con métodos actuales, rápidos y según las características y formas mas variadas requeridas por el propietario , el arquitecto o proyectista, ya sean piscinas públicas, privadas o residenciales. El control de calidad al que sometemos los materiales empleados en dichas instalaciones es muy riguroso permitiéndonos garantizar que todos ellos son inalterables y de duración prácticamente ilimitada. Solamente después de este procedimiento, esquemáticamente expuesto, podemos estar seguros de haber dado al cliente la piscina ideal que él desea.
 		</p>
-		<iframe class="card" width=50% height="380" src="https://www.youtube.com/embed/H0-GcO_QaTM" frameborder="0" allowfullscreen style="margin: 10px;"></iframe>
+		<iframe class="card" width=45% height="380" src="https://www.youtube.com/embed/H0-GcO_QaTM" frameborder="0" allowfullscreen style="margin: 10px;"></iframe>
 	</div>
-<<<<<<< HEAD
 
-	<!-- seccion pisinas -->
-	<dir id="contenedorPIS" class="contenedor">
-		<div class="contenedorVertical"><p class="topeColumna">Grecia</p>
-=======
-	<div class="contenedorAccesorios">
-		<img class="accesorio" src="img/pile/pile00.jpg" style="display:block;">
-		<img class="accesorio" src="img/pile/pile01.jpg">
+	<!-- seccion accesorios -->
+	<div id="accesorios" class="contenedorAccesorios">
+		<img class="accesorio" src="img/logoVulcano.jpg" style="display:block;">
+		<img class="accesorio" src="img/logoJM.jpg">
 		<img class="accesorio" src="img/pile/pile02.jpg">
 		<div class="controlSlider2">
 			<div class="sliderFlechaIzquierda2" onclick="addDivs(-1)">&#10094;</div>
@@ -86,48 +45,17 @@
 			<span class="sliderBoton2 demo2" onclick="Div(3)"></span>
 		</div>
 	</div>
-	<dir class="contenedorPiscinas">
-		<div class="columnaPiscinas"><p class="topeColumna">Grecia</p>
->>>>>>> master
-			<img class="item-flex card" src="img/pile/pile02.jpg">
-			<img class="item-flex card" src="img/pile/pile01.jpg">
-			<img class="item-flex card" src="img/pile/pile05.jpg">
-		</div>
-		<div class="contenedorVertical"><p class="topeColumna">Veneciana</p>
-			<img class="item-flex card" src="img/pile/pile01.jpg">
-			<img class="item-flex card" src="img/pile/pile02.jpg">
-			<img class="item-flex card" src="img/pile/pile06.jpg">
-		</div>
-		<div class="contenedorVertical"><p class="topeColumna">Romana</p>
-			<img class="item-flex card" src="img/pile/pile02.jpg">
-			<img class="item-flex card" src="img/pile/pile03.jpg">
-			<img class="item-flex card" src="img/pile/pile07.jpg">
-		</div>
-		<div class="contenedorVertical"><p class="topeColumna">Hidromasaje</p>
-			<img class="item-flex card" src="img/pile/pile03.jpg">
-			<img class="item-flex card" src="img/pile/pile06.jpg">
-			<img class="item-flex card" src="img/pile/pile02.jpg">
-		</div>
-	</dir>
+
+	<!-- seccion piscinas -->
+	<div id="piletas" class="contenedorPiscinas">
+	</div>
 
 	<!-- seccion quinchos -->
-	<div id="seccionQuinchos">
-		<img id="elementoQuinchos" src="img/quin/cerco.jpg">
-		<p id="elementoQuinchos">
-			QUINCHOS<br>
-			Nos dedicamos a la construcción de quinchos de paja y recambio de paneles , todas las medidas y modelos , sombrillas , pérgolas y cercos de palos y cañas.
-		</p>
-		<img id="elementoQuinchos" src="img/quin/fondoQuincho.JPG">
-		<img id="elementoQuinchos" src="img/quin/quin00.JPG">
+	<div id="quinchos" id="seccionQuinchos">
 	</div>
-<<<<<<< HEAD
-	
+
 	<!-- seccion galeria-->
 	<div id="galeria">
-		<p class="labelGaleria">MIRA NUESTRA GALERIA DE FOTOS</p>
-=======
->>>>>>> master
-	<!--  Aca va a ir el slide con las fotos -->
 		<div class="contenedorSlider card">
 			<img class="slide" src="img/pile/pile00.jpg" style="display:block;">
 			<img class="slide" src="img/pile/pile01.jpg">
@@ -147,9 +75,9 @@
 			<img class="slide" src="img/pile/pile15.jpg">
 			<div class="controlSlider">
 				<div class="sliderFlechaIzquierda" onclick="sumarDivs(-1)">&#10094;</div>
-		    <div class="sliderFlechaDerecha" onclick="sumarDivs(1)">&#10095;</div>
+		    	<div class="sliderFlechaDerecha" onclick="sumarDivs(1)">&#10095;</div>
 				<span class="sliderBoton demo w3-white" onclick="actualDiv(1)"></span>
-		    <span class="sliderBoton demo" onclick="actualDiv(2)"></span>
+		    	<span class="sliderBoton demo" onclick="actualDiv(2)"></span>
 				<span class="sliderBoton demo" onclick="actualDiv(3)"></span>
 				<span class="sliderBoton demo" onclick="actualDiv(4)"></span>
 				<span class="sliderBoton demo" onclick="actualDiv(5)"></span>
@@ -166,57 +94,25 @@
 				<span class="sliderBoton demo" onclick="actualDiv(16)"></span>
 			</div>
 		</div>
-	<!--  Termina el slide -->
-<<<<<<< HEAD
 	</div>
 
 	<!-- seccion contactos -->
-	<footer id="contactos" class="contenedor" style="padding: 0;">
-		<div class="contenedor item-flex"><!--A su ves, datos es otro contenedor-->
-		<!-- Datos esta dividido en dos columnas que son dos conentendores -->
-		<!-- esta es la primera columna -->
-			<div class="contenedorVertical item-flex">
-				<!-- Cada elemento de la columna tiene una imagen y una oracion, por eso usamos otra caja -->
-				<div class="verticalItem">
-		    		<img src="img/icon/lugar.png"><p> Amadeo Buccar 859</p>
-		    	</div>
-					<div class="verticalItem">
-		    		<img src="img/icon/telephone.png"><p> 02477 415676</p>
-		   		</div>
+	<footer id="contactos" class="contenedorFooter">
+		<div class="contenedorContacto">
+			<div class="datoContacto">
+				<img src="img/icon/lugar.png"><p> Amadeo Buccar 859</p>
 			</div>
-			<!-- Esta es la segunda columna -->
-			<div class="contenedorVertical item-flex">
-				<div class="verticalItem"> 
-		      		<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="http://www.facebook.com">Piletas Plastic</a> 
-		     	</div>
-					<div class="verticalItem">
-		      		<img src="img/icon/instagram.png"><a href="http://www.instagram.com">Instagram</a> 
-		   		</div>
+				<div class="datoContacto">
+				<img src="img/icon/telephone.png"><p> 02477 415676</p>
+				</div>
+			<div class="datoContacto" style="display: flex;align-items: center;">
+					<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="http://www.facebook.com">Piletas Plastic</a>
+				</div>
+			<div class="datoContacto" style="display: flex;align-items: center;">
+				<img src="img/icon/instagram.png"><a href="http://www.instagram.com">Instagram</a>
 			</div>
 		</div>
-		<!-- Esta es la segunda parte del footer, el mapa -->
-		<iframe class="item-flex" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5098531937415!2d-60.559361985203516!3d-33.902275180646996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b56a5f47bd37%3A0xdaf28bb1ea192beb!2sAv.+Dr.+Aquileo+Bucar+859%2C+Pergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1497371924520" width="400" height="300" frameborder="0" style="border:0;border-radius:5px" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5098531937415!2d-60.559361985203516!3d-33.902275180646996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b56a5f47bd37%3A0xdaf28bb1ea192beb!2sAv.+Dr.+Aquileo+Bucar+859%2C+Pergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1497371924520" width="400" height="300" frameborder="0" style="border:0;border-radius:5px" allowfullscreen></iframe>
 	</footer>
-=======
-  <footer class="contenedorFooter" style="padding-bottom: 4%;">
-    <div class="contenedorContacto"><!--A su ves, datos es otro contenedor-->
-			<!-- Datos esta dividido en dos columnas que son dos conentendores -->
-    		<div class="datoContacto">
-	    		<img src="img/icon/lugar.png"><p> Amadeo Buccar 859</p>
-	    	</div>
-  			<div class="datoContacto">
-	    		<img src="img/icon/telephone.png"><p> 02477 415676</p>
-	   		</div>
-    		<div class="datoContacto" style="display: flex;align-items: center;">
-      		<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="http://www.facebook.com">Piletas Plastic</a>
-      	</div>
-				<div class="datoContacto" style="display: flex;align-items: center;">
-    			<img src="img/icon/instagram.png"><a href="http://www.instagram.com">Instagram</a>
-	    	</div>
-    </div>
-		<!-- Esta es la segunda parte del footer, el mapa -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5098531937415!2d-60.559361985203516!3d-33.902275180646996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b56a5f47bd37%3A0xdaf28bb1ea192beb!2sAv.+Dr.+Aquileo+Bucar+859%2C+Pergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1497371924520" width="400" height="300" frameborder="0" style="border:0;border-radius:5px" allowfullscreen></iframe>
-  </footer>
->>>>>>> master
 </body>
 </html>
