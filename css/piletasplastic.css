@@ -83,13 +83,19 @@ a{
 
 /*portada*/
 .portada{
-	background-image: url("../img/f2.jpg");
+	background-image: url("../img/portada.jpg");
 	background-position: center|bottom;
 	background-repeat: no-repeat;
 	width: 100%;
-	min-height: 650px;
-	max-height: 650px;
+	height: 650px;
+	position: relative;
 	background-size: cover;
+}
+.portada img{
+	position: absolute;
+	left: 13%;
+	top: 25px;
+	width: 350px;
 }
 
 /*empresa*/
@@ -211,6 +217,7 @@ a{
 
 .contenedorSlider{
 	width: 100%;
+	max-width: 1300px;
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
