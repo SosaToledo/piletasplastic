@@ -4,6 +4,7 @@
 	<title>Piletas Plastic</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/piletasplastic.css"></link>
+<link rel="stylesheet" type="text/css" href="css/seccionPiletas.css"></link>
 <script type="text/javascript" src="js/scripts.js"></script>
 <body>
 	<!-- bara de navegacion -->
@@ -20,7 +21,7 @@
   </nav>
 
 	<!-- seccion portada -->
-	<div class="portada">
+	<div id="portada" class="portada">
 		<img src="img/LOGO.png" alt="LogoPiletasPlastic">
 	</div>
 
@@ -48,15 +49,94 @@
 	</div>
 
 	<!-- seccion piscinas -->
+	<!-- todas estas clases estan en otro CSS -->
 	<div id="piletas" class="contenedorPiscinas">
+		<div class="columnRoma">
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+			<div class="itemPileta">
+				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+				<p class="PPis">2.8*1.7*0.7</p>
+			</div>
+		</div>
+		<div class="columnOtro">
+			<div class="ovalada">
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+			</div>
+			<div class="riñon">
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+			</div>
+			<div class="rectangular">
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+			</div>
+			<div class="hidromasaje">
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+			</div>
+			<div class="minimalista">
+				<div class="itemPileta">
+					<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
+					<p class="PPis">2.8*1.7*0.7</p>
+				</div>
+			</div>	
+		</div>
 	</div>
 
 	<!-- seccion quinchos -->
-	<div id="quinchos" id="seccionQuinchos">
+	<div id="quinchos" class="seccionQuinchos">
 	</div>
 
 	<!-- seccion galeria-->
-	<div class="contenedorSlider card">
+	<div id="galeria" class="contenedorSlider card">
 		<img class="slide" src="img/galeriaFinales/pile01.jpg" style="display:block;">
 		<img class="slide" src="img/galeriaFinales/pile02.jpg">
 		<img class="slide" src="img/galeriaFinales/pile03.jpg">
@@ -82,20 +162,24 @@
 			<span class="sliderBoton demo" onclick="actualDiv(10)"></span>
 		</div>
 	</div>
+
 	<!-- seccion contactos -->
-	<footer class="contenedorFooter">
+	<footer id="contactos" class="contenedorFooter">
 		<div class="contenedorContacto">
 			<div class="datoContacto">
-				<img src="img/icon/lugar.png"><p> Amadeo Buccar 859</p>
+				<img src="img/icon/lugar.png"><p> Amadeo Buccar 859     (2700) Pergamino    Bs. As.</p>
 			</div>
-				<div class="datoContacto">
-				<img src="img/icon/telephone.png"><p> 02477 415676</p>
-				</div>
+			<div class="datoContacto">
+				<img src="img/icon/telephone.png"><p> 02477415676 0247715550198</p>
+			</div>
 			<div class="datoContacto" style="display: flex;align-items: center;">
-					<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="http://www.facebook.com">Piletas Plastic</a>
-				</div>
+				<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="https://www.facebook.com/piletasplastic/">Piletas Plastic</a>
+			</div>
 			<div class="datoContacto" style="display: flex;align-items: center;">
-				<img src="img/icon/instagram.png"><a href="http://www.instagram.com">Instagram</a>
+				<img src="img/icon/facebook.png"><a href="https://www.facebook.com/quinchospergamino/">Quinchos Pergamino</a>
+			</div>
+			<div class="datoContacto" style="display: flex;align-items: center;">
+				<img src="img/icon/email.png"><p style="padding: 0">gustavo-plasencia@hotmail.com</p>
 			</div>
 		</div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5098531937415!2d-60.559361985203516!3d-33.902275180646996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b56a5f47bd37%3A0xdaf28bb1ea192beb!2sAv.+Dr.+Aquileo+Bucar+859%2C+Pergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1497371924520" width="400" height="300" frameborder="0" style="border:0;border-radius:5px" allowfullscreen></iframe>
