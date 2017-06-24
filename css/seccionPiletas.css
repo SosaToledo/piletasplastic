@@ -1,69 +1,82 @@
-.contenedorPiscinas .imgPis{
-	height: 150px;
-	width: 45%;
-	margin: 10px;
+.itemPileta{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 200px;	
 }
-.contenedorPiscinas .PPis{
+.itemPileta .imgPis{
 	height: 150px;
 	width: 45%;
-	margin: 10px;
+}
+.itemPileta .PPis{
+	height: 150px;
+	width: 45%;
 	line-height: 150px;
 
 }
 .contenedorPiscinas{
-	height: 1600px;
-	width: 100%;
+	height: 1250px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.columnRoma{
+	height: 600px;
+	margin: 10px;
+	border:2px solid rgb(102,202,255);
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+
+}
+.columnOtro{
+	height: 600px;
+	margin: 10px;
 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
-.columnRoma{
-	height: 1550px;
-	width: 45%;
-	border: 1px solid black;
-	border-radius: 6px;
-
+.columnAux{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 
-}
-.columnOtro{
-	height: 1450px;
-	width: 45%;
-	border: 1px solid black;
-	border-radius: 6px;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 }
 .ovalada{
 	height: 200px;
-	width: 100%;
-	border: 1px solid black;
-	border-radius: 6px;
+	border:2px solid rgb(102,202,255);
+	border-radius: 10px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 .riñon{
 	height: 400px;
-	width: 100%;
-	border: 1px solid black;
-	border-radius: 6px;
+	border:2px solid rgb(102,202,255);
+	border-radius: 10px;
 	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 }
 .rectangular{
 	height: 200px;
-	width: 100%;
-	border: 1px solid black;
-	border-radius: 6px;
+	border:2px solid rgb(102,202,255);
+	border-radius: 10px;
 	
 	display: flex;
 	flex-direction: column;
@@ -71,18 +84,13 @@
 }
 .hidromasaje{
 	height: 400px;
-	width: 100%;
-	border: 1px solid black;
-	border-radius: 6px;
+	border:2px solid rgb(102,202,255);
+	border-radius: 10px;
 	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 }
 .minimalista{
-}
-.itemPileta{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
