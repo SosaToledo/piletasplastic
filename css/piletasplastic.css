@@ -150,17 +150,13 @@ a{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-}
-.itemAcc img{
-	height: 550px;
-	width: 550px;
-	padding: 15px;
+	flex-wrap: wrap;
 }
 .controlSlider2{
 	text-align: center!important;
 	padding:0.01em;
 	margin-top:16px!important;
-  	margin-bottom:16px!important;
+  margin-bottom:16px!important;
 	font-size:18px!important;
 	color:#fff!important;
 	position:absolute;
