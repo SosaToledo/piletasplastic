@@ -36,7 +36,9 @@ p{
 	text-align: center;
   	font-family:Roboto-Regular, sans-serif;
 }
-
+body{
+	background-color: #eeeeee;
+}
 /*barra*/
 #barra{
 	/*background: rgba(247,52,52,1);
@@ -123,9 +125,14 @@ a{
 	display: inline-block;
 	text-align: justify;
 	padding: 20px 15px 20px 10px;
-	background-color: #EEEEEE;
+	background-color: white;
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
+}
+.nuestraEmpresa:hover{
+	border-top:2px solid #939393;
+	border-bottom:2px solid #939393;
+
 }
 
 /*Accesorios*/
@@ -204,7 +211,7 @@ a{
 /*Galeria*/
 .contenedorSlider{
 	width: 100%;
-	max-width: 1300px;
+	max-width: 1050px;
 	margin: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -266,12 +273,12 @@ a{
 }
 /*CLASES DEL FOOTER*/
 .contenedorFooter{
-	padding-bottom: 4%;
 	margin: 0 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 10px;
+	padding-bottom: 40px;
 	justify-content: space-between;
 }
 .contenedorContacto{
@@ -281,18 +288,10 @@ a{
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 10px;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: stretch;
 }
-.columnaContacto{
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-content: center;
-	align-items: center;
-	flex-wrap: nowrap;
-}
+
 .verticalItem{
 	flex: 1 1 auto;
 	margin: 5px 0;
@@ -305,10 +304,6 @@ a{
 	flex: 0 1 auto;
 	margin: 5px;
 }
-
-
-
-
 .contenedor{
 	width: 100%;
 	display: flex;
@@ -327,7 +322,6 @@ a{
 	flex-wrap: nowrap;
 	/*padding: 10px;*/
 }
-
 .card{
 	background-color: white;
 	padding:10px;
@@ -346,14 +340,15 @@ footer .contenedorContacto{
 	width: 65%;
 }
 .datoContacto{
+	display: flex;
 	text-align: center;
 	margin: 0;
-	height: 10px;
+	align-items: center;
 	justify-content:center;
 }
 footer .contenedorContacto .datoContacto p{
 	color: #EEEEEE;
-	font-size: 20px;
+	font-size: 1em;
 	padding: 10px;
 	display: inline-block;
 	margin: auto;
@@ -361,7 +356,7 @@ footer .contenedorContacto .datoContacto p{
 }
 footer .contenedorContacto .datoContacto a{
 	color: #EEEEEE;
-	font-size: 20px;
+	font-size: 1em;
 	text-align: center;
 	display: inline-block;
 	font-family:    Roboto-Regular,sans-serif;
