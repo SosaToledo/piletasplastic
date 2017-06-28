@@ -44,6 +44,12 @@
 		width: 100%;
 		margin:0 0;
 	}
+	body .seccionQuinchos .decQuinchos h1{
+		font-size: 5em;
+	}
+	body .seccionQuinchos .decQuinchos p{
+		font-size: 3em;
+	}
 }
 
 /*Agrego una fuente de google*/

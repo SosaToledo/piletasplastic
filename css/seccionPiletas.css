@@ -5,16 +5,47 @@
 		justify-content: space-around;
 		margin-top: 5px;
 	}
-	.contenedorPiscinas .PPis{
-		/*display: none;*/
+	body .contenedorPiscinas .itemPileta{
+		width: 50%;
 	}
-
+	body .contenedorPiscinas  .itemPileta .PPis{
+		font-size: 2.5Em;
+		width: 100%;
+		height: 100%;
+		line-height: 1em;
+	}
+	body .contenedorPiscinas .columnOtro .riñon{
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	body .contenedorPiscinas .cabeceraPileta{
+		font-size: 2.5em;
+	}
+	body .contenedorPiscinas .PPis{
+		width: 100%;
+	}
+	body .contenedorPiscinas .columnOtro .hidromasaje{
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	body .contenedorPiscinas .columnOtro .hidromasaje  .cabeceraPileta{
+		width: 100%;
+	}
+	body .contenedorPiscinas .imgPis{
+		width: 100%;
+	}
+	body .contenedorPiscinas .columnAux .itemPileta{
+		width: 100%;
+	}
 }
 .itemPileta{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .itemPileta .PPis{
 	height: 150px;
@@ -22,6 +53,7 @@
 	margin: 0 10px;
 
 }
+
 .contenedorPiscinas{
 	/*width: 100%;*/
 	/*background-image: url("../img/galeriaFinales/pile09.jpg");*/
@@ -62,7 +94,7 @@
 	border-top-left-radius:8px;
 	padding: 10px 10px 0 15px;
 }
-.columnaRoma p{
+.columnRoma p{
 	font-family: Roboto-Regular;
 	text-align: center;
 }
@@ -92,8 +124,10 @@
 	border:2px solid	rgba(63, 158, 255, 1.0);
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 }
 .riñon{
 	width: 49%;
@@ -112,8 +146,10 @@
 	border-radius: 10px;
 	border:2px solid	rgba(63, 158, 255, 1.0);
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 }
 .hidromasaje{
 	width: 49%;
