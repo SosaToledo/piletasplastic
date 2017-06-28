@@ -73,8 +73,17 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 }
-h1{
+h1,h2{
 	text-align: center;
+	margin: 0 auto 30px;
+	width: 100%;
+}
+h2{
+	font-family: Roboto-Regular;
+	text-transform: uppercase;
+}
+body .contenedorEmpresa h2{
+	margin: 30px auto;
 }
 .separador{
 	box-sizing: border-box;
@@ -150,7 +159,6 @@ h1{
 		color: white;
 		text-shadow: 2px 2px 1px black;
 	}
-
 
 	.cardCeption{
 		width: 78%;
