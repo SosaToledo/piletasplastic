@@ -9,6 +9,7 @@
 	}
 	.contenedorEmpresa iframe{
 		width: 100%;
+		height: 600px;
 	}
 	.contenedor .contenedorVertical{
 		width: 50%;
@@ -18,7 +19,7 @@
 	}
 	.contenedorFooter iframe{
 		width: 100%;
-		height: 300px;
+		height: 600px;
 	}
 	.contenedorFooter .contenedorContacto .datoContacto{
 		width: 100%;
