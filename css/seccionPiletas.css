@@ -1,3 +1,15 @@
+@media screen and (max-width: 1000px){
+	.contenedorPiscinas .columnOtro .columnAux{
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+		margin-top: 5px;
+	}
+	.contenedorPiscinas .PPis{
+		/*display: none;*/
+	}
+
+}
 .itemPileta{
 	display: flex;
 	flex-direction: row;
@@ -11,9 +23,8 @@
 
 }
 .contenedorPiscinas{
-	width: 100%;
-	border: 1px solid black;
-	background-image: url("../img/galeriaFinales/pile09.jpg");
+	/*width: 100%;*/
+	/*background-image: url("../img/galeriaFinales/pile09.jpg");*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -24,67 +35,92 @@
 
 }
 .columnRoma{
-	margin: 10px;
-
-	background-color: rgba(255, 255, 255, 0.66);
-	border:2px solid rgb(102,202,255);
+	margin: 0 auto;
+	width: 97%;
+	box-sizing: border-box;
+	border:2px solid	rgba(63, 158, 255, 1.0);
 	border-radius: 10px;
-
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
-
 }
-.columnOtro{
-	margin: 10px;
 
+.cabeceraPileta {
+	font-family: Roboto-Regular;
+	text-align: center;
+	text-transform:uppercase;
+	color: white;
+	text-shadow: 1px 1px 0px black;
+	/*text-decoration-line: underline;*/
+	box-sizing: border-box;
+	border-bottom: 2px solid	rgba(63, 158, 255, 1.0);
+	width: 100%;
+	margin: auto;
+	background-color: rgba(63, 158, 255, 1.0);
+	border-top-right-radius:8px;
+	border-top-left-radius:8px;
+	padding: 10px 10px 0 15px;
+}
+.columnaRoma p{
+	font-family: Roboto-Regular;
+	text-align: center;
+}
+
+.columnOtro{
+	margin: 10px auto;
+	width: 98%;
+	margin-bottom: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .columnAux{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-around;
 
 }
 .ovalada{
-	border:2px solid rgb(102,202,255);
+	width: 49%;
+	box-sizing: border-box;
 	border-radius: 10px;
-	margin-top: 10px;
-
-	background-color: rgba(255, 255, 255, 0.66);
+	border:2px solid	rgba(63, 158, 255, 1.0);
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 .riñon{
-	border:2px solid rgb(102,202,255);
+	width: 49%;
+	margin: 0 auto;
+	box-sizing: border-box;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.66);
-
+	border:2px solid	rgba(63, 158, 255, 1.0);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 }
 .rectangular{
-	border:2px solid rgb(102,202,255);
+	width: 49%;
+	box-sizing: border-box;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.66);
-
+	border:2px solid	rgba(63, 158, 255, 1.0);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 .hidromasaje{
-	border:2px solid rgb(102,202,255);
+	width: 49%;
+	margin: 0 auto;
+	box-sizing: border-box;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.66);
-
+	border:2px solid	rgba(63, 158, 255, 1.0);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
