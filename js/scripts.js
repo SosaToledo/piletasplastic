@@ -52,3 +52,13 @@ function mostrarDiv(u) {
   h[indice-1].style.display = "block";
   puntos[indice-1].className += " white";
 }
+
+function myFunction() {
+  var portada = document.getElementById("portada");
+  var pos = document.body.scrollTop;
+  if (pos < 300) {
+    portada.style.opacity = 1;
+  }else if(pos > 300) {
+      portada.style.opacity = 0.4;
+  }
+}

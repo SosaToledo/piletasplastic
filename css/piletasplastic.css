@@ -105,6 +105,28 @@ body .contenedorEmpresa h2{
 	margin: 0 auto;
 }
 
+.ocultarPort{
+	animation-name: ocult;
+	-webkit- animation-name: ocult;
+	animation-duration: 1s;
+	-webkit- animation-duration: 1s;
+}
+@keyframes ocult {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes ocult {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
 .separadorCeption{
 	width: 78%;
 	margin:0 auto;
@@ -174,7 +196,7 @@ body .contenedorEmpresa h2{
 	}
 
 	.cardCeption{
-		width: 78%;
+		width: 90%;
 		margin:0 auto;
 		padding: 0 0px;
 		box-sizing: border-box;
