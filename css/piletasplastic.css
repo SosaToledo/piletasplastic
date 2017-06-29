@@ -63,7 +63,7 @@
 }
 p{
 	text-align: center;
-  	font-family:Roboto-Regular, sans-serif;
+	font-family:Roboto-Regular, sans-serif;
 }
 body{
 	/*background-color: white;*/
@@ -75,11 +75,24 @@ body{
 }
 h1,h2{
 	text-align: center;
-	margin: 0 auto 30px;
-	width: 100%;
-}
-h2{
 	font-family: Roboto-Regular;
+	margin: 0 auto 0px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.tituloh1{
+	text-align: center;
+	font-family: Roboto-Regular;
+	margin: 0 auto 0px;
+	width: 100%;
+	text-transform: uppercase;
+}
+.cuerpop1{
+	width: 85%;
+	text-align: center;
+	font-family: Roboto-Regular;
+	margin: auto;
+	padding: 10px;
 	text-transform: uppercase;
 }
 body .contenedorEmpresa h2{
@@ -163,18 +176,14 @@ body .contenedorEmpresa h2{
 	.cardCeption{
 		width: 78%;
 		margin:0 auto;
-		padding: 0 5px;
+		padding: 0 0px;
 		box-sizing: border-box;
 		background-color: #EEEEEE;
-		/*background: rgba(52,130,247,1);
-background: -moz-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(52,130,247,1)), color-stop(1%, rgba(238,238,238,1)), color-stop(99%, rgba(238,238,238,1)), color-stop(100%, rgba(52,130,247,1)));
-background: -webkit-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-background: -o-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-background: -ms-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-background: linear-gradient(to right, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3482f7', endColorstr='#3482f7', GradientType=1 );*/
-}
+
+		-webkit-box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.75);
+		}
 
 /*portada*/
 	.portada{
@@ -317,14 +326,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3482f7', end
 		justify-content: space-around;
 	}
 	.decQuinchos{
-		margin:  35px 0 15px 0 ;
+		margin: 0 ;
 		width: 80%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-	}
-	.decQuinchos h1{
-		font-family:    Roboto-Regular,sans-serif;
 	}
 	.seccionQuinchos > img{
 		box-sizing: border-box;
@@ -400,12 +406,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3482f7', end
 
 /*CLASES DEL FOOTER*/
 	.contenedorFooter{
-		margin: 0 0;
+		background-color: #273746;
+		box-sizing: border-box;
+		margin: auto;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding: 10px;
 		padding-bottom: 40px;
+		width: 100%;
 		justify-content: space-between;
 	}
 	.contenedorContacto{
@@ -451,16 +460,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3482f7', end
 	}
 	.card{
 		padding:10px;
-		border:4px double #ccc;
+		border:2px solid #ccc;
 		border-radius:5px
 	}
 	.card:hover{
-		border:4px double #939393;
+		border:2px solid #939393;
 	}
-	footer{
-		background-color: #273746;
-		box-sizing: border-box;
-	}
+
 	footer .contenedorContacto{
 		box-sizing: border-box;
 		width: 65%;
