@@ -56,14 +56,15 @@ function mostrarDiv(u) {
 function myFunction() {
   var portada = document.getElementById("portada");
   var pos = document.body.scrollTop;
-  if (pos < 250) {
-    portada.style.opacity = 1;
-  }else if (pos > 250 && pos < 350) {
-    portada.style.opacity = 0.6;
-  }else if(pos > 350 && pos < 500 ) {
-      portada.style.opacity = 0.3;
-  }else if (pos > 500) {
-    portada.style.opacity = 0.1;
+  if ( pos < 650) {
+    var desc = pos/1000;
+    portada.style.opacity = 0.7 - desc;
+    if (portada.style.opacity < 0) {
+      portada.style.opacity = 1;
+    }
+    if (pos < 20) {
+      portada.style.opacity = 1;
+    }
   }
 
 }
