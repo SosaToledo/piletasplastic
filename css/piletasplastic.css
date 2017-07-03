@@ -247,6 +247,7 @@ body .contenedorEmpresa h2{
 /*Accesorios*/
 	.contenedorAccesorios{
 		width: 98%;
+		height:600px;
 		box-sizing: border-box;
 		margin: auto;
 		position: relative;
