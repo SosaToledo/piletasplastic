@@ -26,6 +26,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
+  setTimeout(showDivs, 2000); // Change image every 2 seconds
 }
 //este script es del slider Accesorios
 
@@ -51,6 +52,7 @@ function mostrarDiv(u) {
   }
   h[indice-1].style.display = "block";
   puntos[indice-1].className += " white";
+  setTimeout(mostrarDiv, 2000); // Change image every 2 seconds
 }
 
 function myFunction() {
