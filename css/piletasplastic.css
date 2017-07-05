@@ -51,31 +51,11 @@
 	body .seccionQuinchos .decQuinchos p{
 		font-size: 3em;
 	}
-
-	body div .contenedorSlider .controlSlider .sliderBoton{
+	body .contenedorAccesorios .accesorio .itemAccDec #pAguas{
 		display: none;
 	}
-	body div .contenedorSlider .controlSlider .sliderFlechaIzquierda{
-		font-size: 3em;
-	}
-	body div .contenedorSlider .controlSlider .sliderFlechaDerecha{
-		font-size: 3em;
-	}
-	body div .contenedorSlider .controlSlider{
-		margin-bottom: 25%;
-	}
-
-	body div .contenedorAccesorios .controlSlider2 .sliderBoton2{
-		display: none;
-	}
-	body div .contenedorAccesorios .controlSlider2 .sliderFlechaDerecha2{
-		font-size: 3em;
-	}
-	body div .contenedorAccesorios .controlSlider2 .sliderFlechaIzquierda2{
-		font-size: 3em;
-	}
-	body div .contenedorAccesorios .controlSlider2{
-		margin-bottom: 25%;
+	body .contenedorAccesorios .accesorio .itemAccDec #DAguas{
+		width: auto;
 	}
 }
 
