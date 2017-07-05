@@ -3,6 +3,8 @@ var slideIndex = 1;
 var indice = 1;
 showDivs(slideIndex);
 mostrarDiv(indice);
+pasar();
+pasarAcc();
 
 function sumarDivs(n) {
   showDivs(slideIndex += n);
@@ -10,6 +12,10 @@ function sumarDivs(n) {
 
 function actualDiv(n) {
   showDivs(slideIndex = n);
+}
+function pasar(){
+  showDivs(slideIndex+=1);
+  setTimeout(pasar, 4000); // Change image every 2 seconds
 }
 
 function showDivs(n) {
@@ -26,7 +32,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
-  setTimeout(showDivs, 2000); // Change image every 2 seconds
 }
 //este script es del slider Accesorios
 
@@ -37,7 +42,10 @@ function addDivs(u) {
 function Div(u) {
   mostrarDiv(indice = u);
 }
-
+function pasarAcc(){
+  mostrarDiv(indice+=1);
+  setTimeout(pasarAcc, 4000); // Change image every 2 seconds
+}
 function mostrarDiv(u) {
   var v;
   var h = document.getElementsByClassName("accesorio");
@@ -52,7 +60,6 @@ function mostrarDiv(u) {
   }
   h[indice-1].style.display = "block";
   puntos[indice-1].className += " white";
-  setTimeout(mostrarDiv, 2000); // Change image every 2 seconds
 }
 
 function myFunction() {

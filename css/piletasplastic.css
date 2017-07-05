@@ -51,6 +51,32 @@
 	body .seccionQuinchos .decQuinchos p{
 		font-size: 3em;
 	}
+
+	body div .contenedorSlider .controlSlider .sliderBoton{
+		display: none;
+	}
+	body div .contenedorSlider .controlSlider .sliderFlechaIzquierda{
+		font-size: 3em;
+	}
+	body div .contenedorSlider .controlSlider .sliderFlechaDerecha{
+		font-size: 3em;
+	}
+	body div .contenedorSlider .controlSlider{
+		margin-bottom: 25%;
+	}
+
+	body div .contenedorAccesorios .controlSlider2 .sliderBoton2{
+		display: none;
+	}
+	body div .contenedorAccesorios .controlSlider2 .sliderFlechaDerecha2{
+		font-size: 3em;
+	}
+	body div .contenedorAccesorios .controlSlider2 .sliderFlechaIzquierda2{
+		font-size: 3em;
+	}
+	body div .contenedorAccesorios .controlSlider2{
+		margin-bottom: 25%;
+	}
 }
 
 /*Agrego una fuente de google*/
@@ -295,7 +321,7 @@ body .contenedorEmpresa h2{
 		text-align: center!important;
 		padding:0.01em;
 		margin-top:16px!important;
-	  	margin-bottom:16px!important;
+	  margin-bottom:16px;
 		font-size:18px!important;
 		color:#fff!important;
 		position:absolute;
@@ -382,7 +408,7 @@ body .contenedorEmpresa h2{
 		text-align: center!important;
 		padding:0.01em 16px;
 		margin-top:16px!important;
-	  margin-bottom:16px!important;
+	  margin-bottom:16px;
 		font-size:18px!important;
 		color:#fff!important;
 		position:absolute;
