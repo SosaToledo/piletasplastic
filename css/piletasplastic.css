@@ -139,25 +139,10 @@ body .contenedorEmpresa h2{
 	padding: 15px 5px;
 	box-sizing: border-box;
 	background-color: #EEEEEE;
-	/*background: rgba(52,130,247,1);
-	background: -moz-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(52,130,247,1)), color-stop(1%, rgba(238,238,238,1)), color-stop(99%, rgba(238,238,238,1)), color-stop(100%, rgba(52,130,247,1)));
-	background: -webkit-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-	background: -o-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-	background: -ms-linear-gradient(left, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-	background: linear-gradient(to right, rgba(52,130,247,1) 0%, rgba(238,238,238,1) 1%, rgba(238,238,238,1) 99%, rgba(52,130,247,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3482f7', endColorstr='#3482f7', GradientType=1 );*/
 }
+
 /*barra*/
 	#barra{
-		/*background: rgba(247,52,52,1);
-		background: -moz-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
-		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(247,52,52,1)), color-stop(13%, rgba(242,242,61,1)), color-stop(32%, rgba(90,245,12,1)), color-stop(51%, rgba(24,240,153,1)), color-stop(70%, rgba(39,109,230,1)), color-stop(87%, rgba(182,39,230,1)), color-stop(99%, rgba(230,39,64,1)), color-stop(100%, rgba(230,39,64,1)));
-		background: -webkit-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
-		background: -o-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
-		background: -ms-linear-gradient(left, rgba(247,52,52,1) 0%, rgba(242,242,61,1) 13%, rgba(90,245,12,1) 32%, rgba(24,240,153,1) 51%, rgba(39,109,230,1) 70%, rgba(182,39,230,1) 87%, rgba(230,39,64,1) 99%, rgba(230,39,64,1) 100%);
-		background: linear-gradient(to right, rgba(247,52,52,0.6) 0%, rgba(242,242,61,0.6) 13%, rgba(90,245,12,0.6) 32%, rgba(24,240,153,0.6) 51%, rgba(39,109,230,0.6) 70%, rgba(182,39,230,0.6) 87%, rgba(230,39,64,0.6) 99%, rgba(230,39,64,0.6) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73434', endColorstr='#e62740', GradientType=1 );*/
 		background: rgba(81,140,35,0);
 		background: -moz-linear-gradient(left, rgba(81,140,35,0) 4%, rgba(81,140,35,0.5) 9%, rgba(70,143,121,1) 14%, rgba(61,146,189,1) 18%, rgba(19,95,194,1) 48%, rgba(61,146,189,1) 76%, rgba(68,144,133,1) 80%, rgba(81,140,35,0.46) 87%, rgba(81,140,35,0) 93%);
 		background: -webkit-gradient(left top, right top, color-stop(4%, rgba(81,140,35,0)), color-stop(9%, rgba(81,140,35,0.5)), color-stop(14%, rgba(70,143,121,1)), color-stop(18%, rgba(61,146,189,1)), color-stop(48%, rgba(19,95,194,1)), color-stop(76%, rgba(61,146,189,1)), color-stop(80%, rgba(68,144,133,1)), color-stop(87%, rgba(81,140,35,0.46)), color-stop(93%, rgba(81,140,35,0)));
@@ -166,7 +151,6 @@ body .contenedorEmpresa h2{
 		background: -ms-linear-gradient(left, rgba(81,140,35,0) 4%, rgba(81,140,35,0.5) 9%, rgba(70,143,121,1) 14%, rgba(61,146,189,1) 18%, rgba(19,95,194,1) 48%, rgba(61,146,189,1) 76%, rgba(68,144,133,1) 80%, rgba(81,140,35,0.46) 87%, rgba(81,140,35,0) 93%);
 		background: linear-gradient(to right, rgba(81,140,35,0) 4%, rgba(81,140,35,0.5) 9%, rgba(70,143,121,1) 14%, rgba(61,146,189,1) 18%, rgba(19,95,194,1) 48%, rgba(61,146,189,1) 76%, rgba(68,144,133,1) 80%, rgba(81,140,35,0.46) 87%, rgba(81,140,35,0) 93%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#518c23', endColorstr='#518c23', GradientType=1 );
-
 		height: auto;
 		width: 100%;
 		overflow: hidden;
@@ -271,7 +255,7 @@ body .contenedorEmpresa h2{
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		align-items: center;
+		/*align-items: center;*/
 		align-content: center;
 	}
 	#logoVulcano{
@@ -282,17 +266,30 @@ body .contenedorEmpresa h2{
 		padding: 15px 0;
 	}
 	#logoMilanesio{
-		width: 45%;
+		margin: auto;
 	}
 	#pMilanesio{
 		width: 45%;
+		margin: 30px;
 	}
 	#imgMilanesio{
-		padding: 20px;
+		margin-top: 15px;
+	}
+	#logoMYP{
+		width: 100%;
+		margin:0 40%;
+	}
+	#pMYP{
+		margin-top: 80px;
+		width: 30%;
+	}
+	.myp{
+		margin-top: 15px;
+		border-radius: 15px;
 	}
 	#logoAguas{
 		width: auto;
-		margin: 0 auto;
+		margin: auto;
 	}
 	#pAguas{
 		width: 100%;
@@ -302,32 +299,6 @@ body .contenedorEmpresa h2{
 		width: auto;
 		margin: 0 auto;
 	}
-	/*.itemAccDec{
-		margin: 0 10px 20px;
-		min-width: 300px;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
-	}
-	.itemAccDec p{
-		margin-top: 15px;
-	}
-	.itemAccImg{
-		padding: 0 10px 10px;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-
-		flex-wrap: nowrap;
-	}
-	.itemAccImg img{
-		width: 33%;
-		height: 33%;
-		border-radius: 30px;
-	}*/
 	.controlSlider2{
 		text-align: center!important;
 		padding:0.01em;
