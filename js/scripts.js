@@ -4,7 +4,7 @@ var indice = 1;
 showDivs(slideIndex);
 mostrarDiv(indice);
 pasar();
-pasarAcc();
+// pasarAcc();
 
 function sumarDivs(n) {
   showDivs(slideIndex += n);
@@ -58,7 +58,7 @@ function mostrarDiv(u) {
   for (v = 0; v < puntos.length; v++) {
      puntos[v].className = puntos[v].className.replace(" white", "");
   }
-  h[indice-1].style.display = "block";
+  h[indice-1].style.display = "flex";
   puntos[indice-1].className += " white";
 }
 
@@ -75,5 +75,12 @@ function myFunction() {
       portada.style.opacity = 1;
     }
   }
+
+}
+
+function llevar(seccion){
+  var aDonde = document.getElementById(seccion).offsetTop;
+  // var estoy = document.body.scrollTop;
+  window.scrollTo(0,aDonde);
 
 }

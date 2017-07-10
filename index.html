@@ -11,13 +11,13 @@
 	<!-- bara de navegacion -->
 	<nav id="barra">
 	    <ul>
-	      <li><a href="#portada">INICIO</a></li>
-	      <li><a href="#empresa">EMPRESA</a></li>
-	      <li><a href="#accesorios">ACCESORIOS</a></li>
-	      <li><a href="#piletas">PILETAS</a></li>
-	      <li><a href="#quinchos">QUINCHOS</a></li>
-	      <li><a href="#galeria">GALERIA</a></li>
-	      <li><a href="#contactos">CONTACTOS</a></li>
+	      <li onclick="llevar('portada')">INICIO</li>
+	      <li onclick="llevar('empresa')">EMPRESA</li>
+	      <li onclick="llevar('accesorios')">ACCESORIOS</li>
+	      <li onclick="llevar('piletas')">PILETAS</li>
+	      <li onclick="llevar('quinchos')">QUINCHOS</li>
+				<li onclick="llevar('galeria')">GALERIA</li>
+	      <li onclick="llevar('contactos')">CONTACTOS</li>
 	    </ul>
   	</nav>
 
@@ -49,20 +49,20 @@
 		<div class="columnRoma">
 			<h2 class="cabeceraPileta">Piletas con escalera tipo Romana</h2>
 			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/pileChica1.png">
+				<img class="imgPis" src="img/piscinas/pequenia000.png">
 				<p class="PPis">2,8 X 1,7 X 0,7</p>
 			</div>
 			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/pileChica1.png">
+				<img class="imgPis" src="img/piscinas/pequenia000.png">
 				<p class="PPis">2,8 X 1,7 X 1,05</p>
 			</div>
 			<div class="itemPileta">
 				<img class="imgPis" src="img/piscinas/pileChica2.png" >
-				<p class="PPis">3,4 X 2,1 X 0,7</p>
+				<p class="PPis">3,85 X 2,5 X 1,1</p>
 			</div>
 			<div class="itemPileta">
 				<img class="imgPis" src="img/piscinas/pileChica3.png">
-				<p class="PPis">3,85 X 2,5 X 1,1</p>
+				<p class="PPis">4,8 X 2,5 X 1,1</p>
 			</div>
 			<div class="itemPileta">
 				<img class="imgPis" src="img/piscinas/Mediana1.png">
@@ -113,7 +113,7 @@
 					<h2 class="cabeceraPileta">pileta rectangular</h2>
 					<div class="itemPileta">
 						<img class="imgPis" src="img/piscinas/Rectangular.png">
-						<p class="PPis">2,8 X 1,7 X 1,0</p>
+						<p class="PPis">3,4 X 2,1 X 0,7</p>
 					</div>
 				</div>
 				<div class="ovalada">
@@ -142,54 +142,48 @@
 		<p class="cuerpop1">tenemos todo lo que necesitas para disfrutar tu pileta al maximo.</p>
 		<div id="accesorios" class="contenedorAccesorios card">
 			<div class="accesorio" style="display:block;">
-				<div class="itemAccDec">
-					<img src="img/accLogo/logoVulcano.png" alt="">
-					<p style="border:3px solid rgb(128,202,255); border-radius: 10px; padding: 15px 30px;">
+					<img id="logoVulcano" src="img/accLogo/logoVulcano.png" alt="">
+					<p id="pVulcano">
 						ACCESORIOS PARA PISCINAS -
 						HIDROMASAJES -
 						PRODUCTOS PARA EL TRATAMIENTO DE AGUA
 					</p>
-				</div>
-				<div class="itemAccImg">
-					<img  src="img/accLogo/106009_1_10.jpg">
-					<img  src="img/accLogo/110000_1.jpg">
-					<img  src="img/accLogo/125002_3.jpg">
-				</div>
+					<img src="img/accLogo/106009_1_10.jpg">
+					<img src="img/accLogo/110000_1.jpg">
+					<img src="img/accLogo/125002_3.jpg">
 			</div>
 			<div class="accesorio">
-				<div class="itemAccDec">
-					<img src="img/accLogo/logomilanesio.png" alt="">
-					<p  style="border:3px solid rgb(128,202,255); border-radius: 10px; width:50%; padding:14px 0 0 0;">
+					<img id="logoMilanesio" src="img/accLogo/logomilanesio.png" alt="">
+					<p id="pMilanesio">
 						Bordes y solados para piscinas
 						En lava volcánica. Atérmicos y antideslizantes.
 						Las texturas ofrecidas garantizan un tránsito cómodo y seguro, aún con restos de agua en superficie.
 					</p>
-				</div>
-				<div class="itemAccImg" style="box-sizing: border-box">
-					<img style="width:80%;" src="img/accLogo/losetas.png" alt="">
-				</div>
+					<img id="imgMilanesio" src="img/accLogo/losetas.png" alt="">
 			</div>
 			<div class="accesorio">
-				<!-- NO TENGO LA MAS PUTA IDEA DE QUE HACER CON ESAS COSAS ACA -->
+				<img class="myp" src="img/accLogo/mesa_y_sillon_europeo.jpg" alt="">
+				<p class="myp">
+					Juegos de mesas, sillas y bancos en fundición de aluminio.<br>
+					Toda la línea de la marca m&p
+				</p>
+				<img class="myp" src="img/accLogo/jardin.png" alt="">
+				<img class="myp" src="img/accLogo/LOGOMYP.png" alt="">
 			</div>
-			<div class="accesorio"  style="align-items:center;">
-				<div class="itemAccImg" style="flex-wrap:wrap; align-items:center">
-					<img src="img/accLogo/aguasLogo.png" alt="">
-				</div>
-				<div class="itemAccDec" style="text-transform: uppercase;">
-					<img id="DAguas" style="width:45%;" src="img/accLogo/s50-1.png" alt="">
-					<p id="pAguas" style="border:3px solid rgb(128,202,255); border-radius: 10px; padding: 80px 0 0 0;">
+			<div class="accesorio">
+					<img id="logoAguas" src="img/accLogo/aguasLogo.png" alt="">
+					<img id="imgAguas" src="img/accLogo/s50-1.png" alt="">
+					<p id="pAguas">
 						<strong>MODELO S200</strong> <br>
-						Piscinas de hasta 12 mts. de longitud. <br>
+						Piscinas de hasta 12 mts. de longitud.
 						Cepilla, aspira y filtra pisos, ángulos, paredes y línea de flotación. <br>
-						Opción de limpieza Estándar. <br>
+						Opción de limpieza Estándar.
 						Ciclo de limpieza de 2 hs. <br>
-						Cepillo Activo. Elimina algas y bacterias. <br>
+						Cepillo Activo. Elimina algas y bacterias.
 						Canasta de filtrado de fácil limpieza + kit de filtros ultrafinos. <br>
 						Longitud del cable 18 mts. <br>
 						12 meses de garantía.
 					</p>
-				</div>
 			</div>
 			<div class="controlSlider2">
 				<div class="sliderFlechaIzquierda2" onclick="addDivs(-1)">&#10094;</div>
@@ -275,9 +269,8 @@
 				<img src="img/icon/email.png"><p>gustavo-plasencia@hotmail.com</p>
 			</div>
 		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5098531937415!2d-60.559361985203516!3d-33.902275180646996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9b56a5f47bd37%3A0xdaf28bb1ea192beb!2sAv.+Dr.+Aquileo+Bucar+859%2C+Pergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1497371924520" width="400" height="150" frameborder="0" style="border:0;border-radius:5px" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.039409768195!2d-60.5571733!3d-33.9022752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0f020c0887e8996!2sPiletas+Plastic!5e0!3m2!1ses-419!2sar!4v1499662540777" width="400" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</footer>
-
 </div>
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
