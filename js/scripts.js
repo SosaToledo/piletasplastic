@@ -1,8 +1,20 @@
+//Animaciones
+function detect(){
+  var pantalla = document.getElementById("main").scrollTop;
+  var elm = document.getElementById("descEmpresa");
+  if (pantalla > elm.offsetTop - 600){
+    elm.className = "descEmpresa aparecer";
+    document.getElementById('videEmpresa').className = "videEmpresa aparecer2";
+  }
+
+}
+
+
 // Este script es del slider de la Galeria
 var slideIndex = 1;
 var indice = 1;
 showDivs(slideIndex);
-mostrarDiv(indice);
+// mostrarDiv(indice);
 pasar();
 // pasarAcc();
 
@@ -32,55 +44,4 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
-}
-//este script es del slider Accesorios
-
-function addDivs(u) {
-  mostrarDiv(indice += u);
-}
-
-function Div(u) {
-  mostrarDiv(indice = u);
-}
-function pasarAcc(){
-  mostrarDiv(indice+=1);
-  setTimeout(pasarAcc, 4000); // Change image every 2 seconds
-}
-function mostrarDiv(u) {
-  var v;
-  var h = document.getElementsByClassName("accesorio");
-  var puntos = document.getElementsByClassName("demo2");
-  if (u > h.length) {indice = 1}
-  if (u < 1) {indice = h.length}
-  for (v = 0; v < h.length; v++) {
-     h[v].style.display = "none";
-  }
-  for (v = 0; v < puntos.length; v++) {
-     puntos[v].className = puntos[v].className.replace(" white", "");
-  }
-  h[indice-1].style.display = "flex";
-  puntos[indice-1].className += " white";
-}
-
-function myFunction() {
-  var portada = document.getElementById("portada");
-  var pos = document.body.scrollTop;
-  if ( pos < 650) {
-    var desc = pos/1000;
-    portada.style.opacity = 0.7 - desc;
-    if (portada.style.opacity < 0) {
-      portada.style.opacity = 1;
-    }
-    if (pos < 20) {
-      portada.style.opacity = 1;
-    }
-  }
-
-}
-
-function llevar(seccion){
-  var aDonde = document.getElementById(seccion).offsetTop;
-  // var estoy = document.body.scrollTop;
-  window.scrollTo(0,aDonde);
-
 }

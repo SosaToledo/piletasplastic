@@ -1,283 +1,123 @@
 <!DOCTYPE html>
-<html manifest="pileplastic.appcache">
-<head>
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="img/icon/swimming-silhouette.png">
-	<title>Piletas Plastic</title>
-
-</head>
-<body onscroll="myFunction()">
-	<!-- bara de navegacion -->
-	<nav id="barra">
-	    <ul>
-	      <li onclick="llevar('portada')">INICIO</li>
-	      <li onclick="llevar('empresa')">EMPRESA</li>
-	      <li onclick="llevar('accesorios')">ACCESORIOS</li>
-	      <li onclick="llevar('piletas')">PILETAS</li>
-	      <li onclick="llevar('quinchos')">QUINCHOS</li>
-				<li onclick="llevar('galeria')">GALERIA</li>
-	      <li onclick="llevar('contactos')">CONTACTOS</li>
-	    </ul>
-  	</nav>
-
-	<!-- seccion portada -->
-	<div id="portada" class="portada" style="background-image: url(../img/portada.jpg');">
-		<img id="imgPortada" src="img/LOGO.png" alt="LogoPiletasPlastic">
-	</div>
-
-	<div class="cardCeption">
-	<!-- seccion empresa -->
-	<div id="empresa" class="contenedorEmpresa">
-		<h1 class="tituloh1" style="padding-top:15px">NUESTRA EMPRESA</h1>
-		<p class="nuestraEmpresa">
-			Plastic es una empresa con una trayectoria de más de veinte años de experiencia en el rubro de piletas reforzadas en fibra de vidrio (P.R.F.V.).
-			Para ello hemos privilegiado la calidad y el diseño de nuestras piscinas, utilizando las mejores materias primas del mercado.
-			Contando así la cantidad de modelos construidos según características y formas variadas requeridas por propietarios, arquitectos y proyectistas,
-			siendo así piscinas públicas o privadas.
-			Trabajamos diariamente con responsabilidad y un alto grado de compromiso;
-			buscando el perfeccionamiento en todos los ámbitos de nuestros productos, desde la fabricación hasta la colocación y terminación de la misma,
-			para poder darle así el mejor de los servicios. Por esto nuestra empresa y productos son reconocidos en toda la zona por su calidad y
-			larga durabilidad en el tiempo.
-		</p>
-		<iframe  width=45% height="320" src="https://www.youtube.com/embed/FPUK0A2Y6cM" frameborder="0" allowfullscreen style="margin: 10px; margin-right:25px;"></iframe>
-	</div>
-
-	<!-- seccion piscinas -->
-	<div class="separadorCeption">
-		<div class="separador"></div>
-	</div>
-	<h1 class="tituloh1">Modelos de piletas</h1>
-	<p class="cuerpop1">
-		Contamos con una amplia linea de piletas en diferentes formas y medidas para cumplir con todas las necesidades.<br> (Alto x Ancho x Profundidad)
-	</p>
-	<div id="piletas" class="contenedorPiscinas">
-		<div class="columnRoma">
-			<h2 class="cabeceraPileta">Piletas rectangular con escalera romana</h2>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/pequenia000.png" alt="Pileta chica 1">
-				<p class="PPis">2,8 X 1,7 X 0,7</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/pequenia000.png">
-				<p class="PPis">2,8 X 1,7 X 1,05</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/pileChica2.png" >
-				<p class="PPis">3,85 X 2,1 X 1,1</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/pileChica3.png">
-				<p class="PPis">4,8 X 2,5 X 1,1</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/Mediana1.png">
-				<p class="PPis">5,1 X 2,9 X 1,3</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/Mediana2.png">
-				<p class="PPis">6,1 X 2,9 X 1,3</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/Grande1.png">
-				<p class="PPis">6,0 X 3,2 X 1,3 a 1,45</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/Grande2.png">
-				<p class="PPis">7,0 X 3,2 X 1,2 a 1,45</p>
-			</div>
-			<div class="itemPileta">
-				<img class="imgPis" src="img/piscinas/gigante000.png">
-				<p class="PPis">8,5 X 3,2 X 1,65</p>
-			</div>
-		</div>
-		<div class="columnOtro">
-			<div class="riñon">
-				<h2 class="cabeceraPileta">Piletas tipo riñon</h2>
-				<div class="itemPileta">
-					<img class="imgPis" src="img/piscinas/RinonChico.png">
-					<p class="PPis">2,9 X 1,7 X 0,5</p>
-				</div>
-				<div class="itemPileta">
-					<img class="imgPis" src="img/piscinas/RinonGrande.png">
-					<p class="PPis">3,9 X 2,7 X 0,7</p>
-				</div>
-			</div>
-			<div class="hidromasaje">
-				<h2 class="cabeceraPileta">Hidromasajes</h2>
-				<div class="itemPileta">
-					<img class="imgPis" src="img/piscinas/hidromasaje-02.png">
-					<p class="PPis">2,3 X 0,54</p>
-				</div>
-				<div class="itemPileta">
-					<img class="imgPis" src="img/piscinas/hidromasaje-01.png">
-					<p class="PPis">1,23 X 1,23 X 1,0</p>
-				</div>
-			</div>
-			<div class="columnAux">
-				<div class="rectangular">
-					<h2 class="cabeceraPileta">pileta rectangular</h2>
-					<div class="itemPileta">
-						<img class="imgPis" src="img/piscinas/Rectangular.png">
-						<p class="PPis">3,4 X 2,1 X 0,7</p>
-					</div>
-				</div>
-				<div class="ovalada">
-					<h2 class="cabeceraPileta">pileta ovalada</h2>
-					<div class="itemPileta">
-						<img class="imgPis" src="img/piscinas/ovalada.png">
-						<p class="PPis">6,0 X 3,0 X 1,45</p>
-					</div>
-				</div>
-			</div>
-			<!--<div class="minimalista">
-			<div class="itemPileta">
-				<img id="romaUno" class="imgPis" src="img/pile/pile03.jpg">
-				<p class="PPis">2,8 X 1,7 X 1,0</p>
-				</div>
-			</div>-->
-		</div>
-	</div>
-
-	<!-- seccion accesorios -->
-	<div class="separadorCeption">
-		<div class="separador"></div>
-	</div>
-	<div style="padding:0 10px 10px;box-sizing:border-box;">
-		<h1 class="tituloh1"> Accesorios</h1>
-		<p class="cuerpop1">tenemos todo lo que necesitas para disfrutar tu pileta al maximo.</p>
-		<div id="accesorios" class="contenedorAccesorios card">
-			<div class="accesorio" style="display:block;">
-					<img id="logoVulcano" src="img/accLogo/logoVulcano.png" alt="">
-					<p id="pVulcano">
-						ACCESORIOS PARA PISCINAS -
-						HIDROMASAJES -
-						PRODUCTOS PARA EL TRATAMIENTO DE AGUA
-					</p>
-					<img src="img/accLogo/106009_1_10.jpg">
-					<img src="img/accLogo/110000_1.jpg">
-					<img src="img/accLogo/125002_3.jpg">
-			</div>
-			<div class="accesorio">
-					<img id="logoMilanesio" src="img/accLogo/logomilanesio.png" alt="">
-					<p id="pMilanesio">
-						Bordes y solados para piscinas
-						En lava volcánica. Atérmicos y antideslizantes.<br>
-						Las texturas ofrecidas garantizan un tránsito cómodo y seguro, aún con restos de agua en superficie.
-					</p>
-					<img id="imgMilanesio" src="img/accLogo/losetas.png" alt="">
-			</div>
-			<div class="accesorio">
-				<img id="logoMYP" src="img/accLogo/LOGOMYP.png" alt="">
-				<img class="myp" src="img/accLogo/jardin.png" alt="">
-				<p id="pMYP">
-					Juegos de mesas, sillas y bancos en fundición de aluminio.
-					Toda la línea de la marca m&p
-				</p>
-				<img class="myp" src="img/accLogo/mesa_y_sillon_europeo.jpg" alt="">
-			</div>
-			<div class="accesorio">
-					<img id="logoAguas" src="img/accLogo/aguasLogo.png" alt="">
-					<img id="imgAguas" src="img/accLogo/s50-1.png" alt="">
-					<p id="pAguas">
-						<strong>MODELO S200</strong> <br>
-						Piscinas de hasta 12 mts. de longitud.
-						Cepilla, aspira y filtra pisos, ángulos, paredes y línea de flotación. <br>
-						Opción de limpieza Estándar.
-						Ciclo de limpieza de 2 hs. <br>
-						Cepillo Activo. Elimina algas y bacterias.
-						Canasta de filtrado de fácil limpieza + kit de filtros ultrafinos. <br>
-						Longitud del cable 18 mts. <br>
-						12 meses de garantía.
-					</p>
-			</div>
-			<div class="controlSlider2">
-				<div class="sliderFlechaIzquierda2" onclick="addDivs(-1)">&#10094;</div>
-				<div class="sliderFlechaDerecha2" onclick="addDivs(1)">&#10095;</div>
-				<span class="sliderBoton2 demo2 white" onclick="Div(1)"></span>
-				<span class="sliderBoton2 demo2" onclick="Div(2)"></span>
-				<span class="sliderBoton2 demo2" onclick="Div(3)"></span>
-				<span class="sliderBoton2 demo2" onclick="Div(4)"></span>
-			</div>
-		</div>
-	</div>
-
-	<!-- seccion quinchos -->
-	<div class="separadorCeption">
-		<div class="separador"></div>
-	</div>
-	<div id="quinchos" class="seccionQuinchos ">
-		<div class="decQuinchos">
-			<h1 class="tituloh1">QUINCHOS PERGAMINO</h1>
-			<p class="cuerpop1">
-				Nos dedicamos a la construcción de quinchos de paja y recambio de paneles , todas las medidas y modelos , sombrillas , pérgolas y cercos de palos y cañas.
-			</p>
-		</div>
-		<img src="img/quin/quin00.jpg">
-		<img src="img/quin/quin01.jpg">
-	</div>
-
-	<!-- seccion galeria-->
-	<div class="separadorCeption">
-		<div class="separador"></div>
-	</div>
-	<div class="" style="padding:0 10px 10px;box-sizing:border-box;">
-		<div id="galeria" class="contenedorSlider card" style="background-color:#eeeeee;" >
-			<img class="slide" src="img/galeriaFinales/pile01.jpg" style="display:block;">
-			<img class="slide" src="img/galeriaFinales/pile02.jpg">
-			<img class="slide" src="img/galeriaFinales/pile03.jpg">
-			<img class="slide" src="img/galeriaFinales/pile04.jpg">
-			<img class="slide" src="img/galeriaFinales/pile05.jpg">
-			<img class="slide" src="img/galeriaFinales/pile06.jpg">
-			<img class="slide" src="img/galeriaFinales/pile07.jpg">
-			<img class="slide" src="img/galeriaFinales/pile08.jpg">
-			<img class="slide" src="img/galeriaFinales/pile09.jpg">
-			<img class="slide" src="img/galeriaFinales/pile10.jpg">
-			<div class="controlSlider">
-				<div class="sliderFlechaIzquierda" onclick="sumarDivs(-1)">&#10094;</div>
-		    	<div class="sliderFlechaDerecha" onclick="sumarDivs(1)">&#10095;</div>
-				<span class="sliderBoton demo w3-white" onclick="actualDiv(1)"></span>
-		    	<span class="sliderBoton demo" onclick="actualDiv(2)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(3)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(4)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(5)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(6)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(7)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(8)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(9)"></span>
-				<span class="sliderBoton demo" onclick="actualDiv(10)"></span>
-			</div>
-	</div>
-	</div>
-
-	<!-- seccion contactos -->
-	<footer id="contactos" class="contenedorFooter ">
-		<div class="contenedorContacto">
-			<div class="datoContacto">
-				<img src="img/icon/lugar.png"><p> Amadeo Buccar 859 (2700) Pergamino Bs. As.</p>
-			</div>
-			<div class="datoContacto">
-				<img src="img/icon/telephone.png"><p>02477 415676</p>
-			</div>
-      <div class="datoContacto">
-				<img src="img/icon/telephone.png"><p>02477 15-550198</p>
-			</div>
-			<div class="datoContacto" >
-				<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="https://www.facebook.com/piletasplastic/">Piletas Plastic</a>
-			</div>
-			<div class="datoContacto">
-				<img src="img/icon/facebook.png"><a href="https://www.facebook.com/quinchospergamino/">Quinchos Pergamino</a>
-			</div>
-			<div class="datoContacto" style="display: flex;align-items: center;">
-				<img src="img/icon/instagram.png"><a href="https://www.instagram.com/piletasplastic/">Piletas plastic</a>
-			</div>
-			<div class="datoContacto" style="display: flex;align-items: center;">
-				<img src="img/icon/email.png"><p>gustavo-plasencia@hotmail.com</p>
-			</div>
-		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.039409768195!2d-60.5571733!3d-33.9022752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0f020c0887e8996!2sPiletas+Plastic!5e0!3m2!1ses-419!2sar!4v1499662540777" width="400" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</footer>
-</div>
-<script async type="text/javascript" src="js/scriptsC.js"></script>
-</body>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <meta charset="UTF-8">
+  	<link rel="icon" type="image/png" href="img/icon/swimming-silhouette.png">
+  	<title>Piletas Plastic</title>
+    <script async type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body id="main" onscroll="detect()">
+    <nav>
+      <div class="barra">
+        <a href="index.html">Inicio</a>
+        <a href="piletas.html">Piletas</a>
+        <a href="quinchos.html">Quinchos</a>
+        <a href="contactos.html">Contactos</a>
+        <a href="#"><img src="img/icon/facebook.png" alt=""></a>
+      </div>
+    </nav>
+    <header>
+      <img src="img/logo.png" alt="">
+    </header>
+    <section id="empresa">
+      <h1>Nuestra empresa</h1>
+      <div id="descEmpresa" class="descEmpresa">
+        <p>
+          Plastic es una empresa con una trayectoria de más de veinte años de experiencia en el rubro de piletas
+          reforzadas en fibra de vidrio (P.R.F.V.). Para ello hemos privilegiado la calidad y el diseño
+          de nuestras piscinas, utilizando las mejores materias primas del mercado. Contando así la cantidad
+          de modelos construidos según características y formas variadas requeridas por propietarios,
+          arquitectos y proyectistas, siendo así piscinas públicas o privadas.
+          Trabajamos diariamente con responsabilidad y un alto grado de compromiso; buscando el perfeccionamiento
+          en todos los ámbitos de nuestros productos, desde la fabricación hasta la colocación y terminación de
+          la misma, para poder darle así el mejor de los servicios. Por esto nuestra empresa y productos son
+          reconocidos en toda la zona por su calidad y larga durabilidad en el tiempo.
+        </p>
+      </div>
+      <div id="videEmpresa" class="videEmpresa">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FPUK0A2Y6cM" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="accesorios">
+      <h1>Accesorios</h1>
+      <div class="itemAccesorio vulcano">
+        <img src="img/acc/vulcanoLogo.png" alt="">
+        <div class="vulcanoImg">
+          <img src="img/acc/vulcanoAcc1.jpg" alt="">
+          <img src="img/acc/vulcanoAcc2.jpg" alt="">
+          <img src="img/acc/vulcanoAcc3.jpg" alt="">
+        </div>
+      </div>
+      <div class="itemAccesorio milanesio">
+        <img src="img/acc/milanesioLogo.png" alt="">
+        <img src="img/acc/milanesioAcc.png" alt="">
+      </div>
+      <div class="itemAccesorio myp">
+        <img src="img/acc/mypLogo.png" alt="">
+        <div class="mypImg">
+          <img src="img/acc/mypAcc1.jpg" alt="">
+          <img src="img/acc/mypAcc2.png" alt="">
+        </div>
+      </div>
+      <div class="itemAccesirio aguas">
+        <img src="img/acc/aguasLogo.png" alt="">
+        <img src="img/acc/aguasAcc.png" alt="">
+      </div>
+    </section>
+    <section id="galeria">
+      <h1>Galeria</h1>
+      <div id="galeria" class="contenedorSlider card" style="background-color:#eeeeee;" >
+  			<img class="slide" src="img/galeriaFinales/pile01.jpg" style="display:block;">
+  			<img class="slide" src="img/galeriaFinales/pile02.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile03.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile04.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile05.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile06.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile07.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile08.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile09.jpg">
+  			<img class="slide" src="img/galeriaFinales/pile10.jpg">
+  			<div class="controlSlider">
+  				<div class="sliderFlechaIzquierda" onclick="sumarDivs(-1)">&#10094;</div>
+  		    	<div class="sliderFlechaDerecha" onclick="sumarDivs(1)">&#10095;</div>
+  				<span class="sliderBoton demo w3-white" onclick="actualDiv(1)"></span>
+  		    	<span class="sliderBoton demo" onclick="actualDiv(2)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(3)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(4)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(5)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(6)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(7)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(8)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(9)"></span>
+  				<span class="sliderBoton demo" onclick="actualDiv(10)"></span>
+  			</div>
+  	</div>
+    </section>
+    <footer>
+      <div class="infoContacto">
+        <div class="datoContacto">
+  				<img src="img/icon/telephone.png"><p>02477 415676</p>
+  			</div>
+        <div class="datoContacto">
+  				<img src="img/icon/telephone.png"><p>02477 550198</p>
+  			</div>
+  			<div class="datoContacto" >
+  				<img src="img/icon/facebook.png" title="Piletas Plastic"><a href="https://www.facebook.com/piletasplastic/">Piletas Plastic</a>
+  			</div>
+  			<div class="datoContacto">
+  				<img src="img/icon/facebook.png"><a href="https://www.facebook.com/quinchospergamino/">Quinchos Pergamino</a>
+  			</div>
+  			<div class="datoContacto" style="display: flex;align-items: center;">
+  				<img src="img/icon/instagram.png"><a href="https://www.instagram.com/piletasplastic/">Piletas plastic</a>
+  			</div>
+  			<div class="datoContacto" style="display: flex;align-items: center;">
+  				<img src="img/icon/email.png"><p>gustavo-plasencia@hotmail.com</p>
+  			</div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.790610011667!2d-60.5622087241455!3d-33.89743981478926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0f020c0887e8996!2sPiletas+Plastic!5e0!3m2!1ses-419!2sar!4v1506715708560" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </footer>
+  </body>
 </html>
-<link rel="stylesheet" type="text/css" href="css/piletasplasticC.css"></link>
