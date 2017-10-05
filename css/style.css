@@ -202,6 +202,9 @@
     width:60%;
     height:150px;
   }
+  #piletas{
+    padding: 50px 100px;
+  }
   .aparecer2 {
       /* The name of the animation */
       animation-name: slide2;

@@ -1,12 +1,19 @@
 //Animaciones
 function detect(){
-  var pantalla = document.getElementById("main").scrollTop;
+  tamPantalla = screen.width;
+  var es_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
   var elm = document.getElementById("descEmpresa");
-  if (pantalla > elm.offsetTop - 600){
-    elm.className = "descEmpresa aparecer";
-    document.getElementById('videEmpresa').className = "videEmpresa aparecer2";
+  var pantalla = document.getElementById("main").scrollTop;
+  var elm2 = document.getElementById('videEmpresa');
+  if(es_chrome){
+    if (pantalla > elm.offsetTop - 600 && tamPantalla >450){
+      elm.className = "descEmpresa aparecer";
+      elm2.className = "videEmpresa aparecer2"
+    }
+  }else {
+    elm.style.visibility = "visible";
+    elm2.style.visibility = "visible";
   }
-
 }
 
 

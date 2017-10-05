@@ -7,6 +7,7 @@
     display: none;
   }
   .descEmpresa, .videEmpresa{
+    visibility: visible;
     width: 100%;
   }
   #accesorios{
@@ -19,7 +20,7 @@
     font-size: 1.2em;
     padding: 10px;
   }
-  .barra a:nth-child(3),{
+  .barra a:nth-child(3){
     display: none;
   }
   footer{
@@ -32,5 +33,11 @@
   footer iframe{
     width: 100%;
     height: 300px;
+  }
+  #piletas{
+    padding: 10px 25px;
+  }
+  .columnOtro{
+    flex-wrap: wrap;
   }
 }
